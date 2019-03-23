@@ -8,7 +8,3 @@ body{font-family: "微软雅黑";}
 ul,li,ol{list-style: none;}
 img{border:0;display: block;}
 input{outline:0;border:0;}
-
-.clearfix::after{content: "";display: block;clear:both;overflow: hidden;visibility: hidden;}
-.clearfix{zoom:1;}
-.cont{width: 1070px;margin: 0 auto;height: 100%;}
