@@ -5,6 +5,7 @@ uglify = require('gulp-uglify'), // 压缩js
 babel = require('gulp-babel'), // 把es6转换为es5
 gulpSequence = require('gulp-sequence'), // 处理异步任务
 cleanCss = require('gulp-clean-css'), // 压缩css
+imagemin = require('gulp-imagemin'), // 压缩图片
 rev = require('gulp-rev'), // 生成hash值
 del = require('del'),
 revCollector = require('gulp-rev-collector');
@@ -13,7 +14,7 @@ gulp.task('del', function() {
   del(['dist']);
 })
 gulp.task('default', function (cb) {
-  gulpSequence(['miniJs', 'miniCss'], 'miniHtml')(cb)
+  gulpSequence(['miniJs', 'miniCss', 'miniImg'], 'miniHtml')(cb)
 })
 
 gulp.task('miniJs', function () {
@@ -48,3 +49,8 @@ gulp.task('miniCss', function() {
   .pipe(rev.manifest())
   .pipe(gulp.dest('rev')) 
 })
+gulp.task('miniImg', () =>
+    gulp.src('app/images/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/images'))
+);
