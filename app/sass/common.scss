@@ -1,0 +1,21 @@
+@charset 'utf-8';
+/*css reset*/
+body,p,h1,h2,h3,h4,h5,h6,input,ul,li,ol,dl,dt,dd,form,fieldset,legend,textarea,select,img,figure,figcaption{margin:0;padding:0;}
+em,i{font-style: normal;}
+b,strong,h1,h2,h3,h4,h5,h6{font-weight: normal;}
+a,u{text-decoration: none;color:#333}
+body{font-family: "微软雅黑";}
+ul,li,ol{list-style: none;}
+img{border:0;display: block;vertical-align: top}
+input{outline:0;border:0;}
+body{
+    font: 12px "Microsoft YaHei",Helvetica Neue,tahoma,Arial,Verdana,"Hiragino Sans GB","\5b8b\4f53";
+    color: #333;
+}
+a:hover{
+    text-decoration: none;
+    color: #ff4040;
+}
+.clearfix::after{content: "";display: block;clear:both;overflow: hidden;visibility: hidden;}
+.clearfix{zoom:1;}
+.wrap{width: 1070px;margin: 0 auto;height: 100%;}
