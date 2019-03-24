@@ -116,12 +116,6 @@ $backgroundColor:#f4f4f4;
                         color: $color;
                     }
                 }
-                #vip{
-                    color: $color;
-                    .iconfont{
-                        color: $color;
-                    }
-                }
             }
         }
     }
@@ -285,6 +279,9 @@ $backgroundColor:#f4f4f4;
                             line-height: 19px;
                             font-size: 14px;
                             color: #aaa;
+                        }
+                        a:hover{
+                            color:#333;
                         }
                     }
                 }
