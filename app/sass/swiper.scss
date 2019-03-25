@@ -1,0 +1,70 @@
+@import 'common.css';
+$height:400px;
+$mix-width:1070px;
+.swiper-container{
+    width: 100%;
+    height: $height;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    .swiper-wrapper{
+        width: 100%;
+        height: 100%;
+        .swiper-slide{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            animation: all 4s;
+            z-index: 0;
+            display: none;
+            .img{
+                position: absolute;
+                width:100%;
+                height: 100%;
+                min-width: $mix-width;
+                top:0;
+                left:0;
+                background-position: center;
+                background-repeat: no-repeat;  
+            };
+        };
+        .active{
+            z-index: 1;
+            display: list-item;
+        }
+    };
+    .swiper-tab{
+        height: 40px;
+        position: absolute;
+        width: $mix-width;
+        top:370px;
+        left: 50%;
+        margin-left:-($mix-width/2);
+        z-index: 100;
+        cursor: pointer;
+        .swiper-tab-ol{
+            text-align: center;
+            white-space: nowrap;
+            font-size:0px;
+            overflow: hidden;
+            .swiper-cur{
+                margin-right: 10px;
+                display: inline-block;
+                width: 110px;
+                overflow: hidden;
+                height: 40px;
+                background: #fff;
+                text-align: center;
+                color: #333;
+                font-size: 14px;
+                line-height: 40px;
+                cursor: pointer;
+            };
+            .active{
+                background: #333;
+                color: #fff;
+            }
+
+        }
+    }
+}
