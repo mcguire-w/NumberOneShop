@@ -2,7 +2,7 @@
 #needLazyLoad{
     height: 501px;
     margin-top: 20px;
-    background-color: #fff;
+    // background-color: #fff;
     .quality-imoport{
         height: 501px;
         margin-top: 20px;
@@ -221,7 +221,7 @@
                 overflow: hidden;
                 white-space: nowrap;
             }
-            .qua-top-slidecon{
+            .qua-top-slideCon{
                 overflow: hidden;
                 position: absolute;
                 height: 317px;
@@ -235,7 +235,7 @@
                     transition: all .5s ease;
                     position: relative;
                     left: 10px;
-                    .qua_top_slideCon_ul {
+                    .qua-top-slideCon-ul{
                         position: relative;
                         height: 100%;
                         float: left;
@@ -255,6 +255,7 @@
                             box-shadow: 0 2px 20px 0 rgba(0,0,0,0.07);
                             margin-bottom: 11px;
                             cursor: pointer;
+                            overflow: hidden;
                             .qua-imgCon-font{
                                 position: absolute;
                                 background: gold;
@@ -267,23 +268,20 @@
                                 font-weight: bold;
                             }
                             img{
-                                margin-top: 15px;
-                                margin-left: 15px;
-                                width: 60px;
-                                height: 60px;
-                            }
-                            .tit-two{
-                                background: #ccc;
-                            }
-                            .tit-three{
-                                background: burlywood;
-                            }
-                            .tit-four{
-                                background: #ddd;
+                                margin-top: 15px !important;
+                                margin-left: 15px !important;
+                                width: 60px !important;
+                                height: 60px !important;
                             }
                         }
                         .qua-top-imgCon:nth-child(3n+1){
                             margin-top:13px; 
+                        }
+                        a:nth-child(2) .qua-imgCon-font{
+                            background: #ccc;
+                        }
+                        a:nth-child(3) .qua-imgCon-font{
+                            background: burlywood;
                         }
                     }
                 }
@@ -301,15 +299,28 @@
                 line-height: 16px;
                 background: #d5d5d5;
                 cursor: pointer;
+                &:hover{
+                    background-color: #666;
+                }
             }
             .qua-top-btn-forbid{
                 background-color: #ebebeb !important;
+                &:hover{
+                    background-color:  #ebebeb !important;
+                }
             }
             .qua-top-left-btn{
                 left: 60px;
             }
+            .qua-top-left-btn i{
+                font-size: 14px;
+            }
             .qua-top-right-btn{
                 left: 94px;
+                padding-left: 2px;
+            }
+            .qua-top-right-btn i{
+                font-size: 10px;
             }
         }
         .qua-brand{
@@ -343,8 +354,11 @@
             .qua-brand-left-btn{
                 left:0;
             }
-            .qua-brand-left-btn{
-                right: 0;
+            .qua-brand-right-btn{
+                right: 0px !important;
+                left: auto;
+                -moz-border-radius: 6px 0 0 6px;
+                border-radius: 6px 0 0 6px;
             }
             .qua-brand-img-con{
                 width: 100%;
@@ -372,7 +386,104 @@
                         img{
                             transition: opacity 1.5s ease;
                             cursor: pointer;
+                            width: 80px;
+                            height: 80px;
+                            position: absolute;
+                            margin-left: -40px;
+                            left: 50%;
+                            &:hover{
+                                opacity: .4;
+                            }
                         }
+                        .qua-brand-img-hover{
+                            z-index: -1;
+                            opacity: 0;
+                            filter: Alpha(opacity=0);
+                            width: 100%;
+                            height: 0;
+                            background-color: #fff;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            -webkit-transition: opacity 1.5s ease;
+                            -o-transition: opacity 1.5s ease;
+                            -moz-transition: opacity 1.5s ease;
+                            transition: opacity 1.5s ease;
+                        }
+                        .qua-brand-img-hover-name{
+                            color: #333;
+                            font-size: 14px;
+                            font-weight: bold;
+                            width: 100px;
+                            text-align: center;
+                            line-height: 23px;
+                            height: 23px;
+                            position: absolute;
+                            top: 22px;
+                            left: 50%;
+                            margin-left: -50px;
+                            z-index: -1;
+                            opacity: 0;
+                            filter: Alpha(opacity=0);
+                            -webkit-transition: opacity 1.5s ease;
+                            -o-transition: opacity 1.5s ease;
+                            -moz-transition: opacity 1.5s ease;
+                            transition: opacity 1.5s ease;
+                        }
+                        .qua-brand-img-hover-lyd{
+                            color: #666;
+                            font-size: 12px;
+                            width: 120px;
+                            text-align: center;
+                            line-height: 14px;
+                            height: 14px;
+                            top: 46px;
+                            margin-left: -60px;
+                            left: 50%;
+                            position: absolute;
+                            font-weight: bold;
+                            z-index: -1;
+                            opacity: 0;
+                            filter: Alpha(opacity=0);
+                            -webkit-transition: opacity 1.5s ease;
+                            -o-transition: opacity 1.5s ease;
+                            -moz-transition: opacity 1.5s ease;
+                            transition: opacity 1.5s ease;
+                            span{
+                                width: 10px;
+                                height: 1px;
+                                background: #e2e2e2;
+                                display: inline-block;
+                                position: relative;
+                                top: -3px;
+                            }
+                            .qua-brand-hover-hover-leftLine {
+                                margin-right: 5px;
+                            }
+                            .qua-brand-hover-hover-rightLine {
+                                margin-left: 5px;
+                            }
+                        }
+                        .text-limit{
+                            white-space: nowrap;
+                            -o-text-overflow: ellipsis;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                    }
+                    &:hover .qua-brand-img-hover{
+                        opacity: .9;
+                        height: 100%;
+                        z-index: 100;
+                        cursor: pointer;
+                    }
+                    &:hover .qua-brand-img-hover-lyd{
+                        opacity: 1;
+                        z-index: 100;
+                    }
+                    &:hover .qua-brand-img-hover-name{
+                        opacity: 1;
+                        z-index: 100;
                     }
                 }
             }

@@ -1,181 +1,343 @@
 [
     {
-        "msg" : 200,
+        "msg": 200,
         "data": [
             {
                 "h2": "品质进口",
                 "small": "给你完美生活",
-                "a" : ["进口饼干", "进口牛奶", "进口水", "进口糖巧", "葡萄酒", "进口油"],
-                "bg" :"images/pic_036.jpg",
-                "shop" : [
+                "a": [
+                    "进口饼干",
+                    "进口牛奶",
+                    "进口水",
+                    "进口糖巧",
+                    "葡萄酒",
+                    "进口油"
+                ],
+                "bg": "images/pic_036.jpg",
+                "shop": [
                     {
-                        "h3" : "进口休闲食品",
-                        "p" : "爆款直降",
-                        "bg1" : "images/pic_037.png"
+                        "h3": "进口休闲食品",
+                        "p": "爆款直降",
+                        "bg1": "images/pic_037.png"
                     },
                     {
-                        "h3" : "日本美妆",
-                        "p" : "低至5折",
-                        "bg1" : "images/pic_042.jpg"
+                        "h3": "日本美妆",
+                        "p": "低至5折",
+                        "bg1": "images/pic_042.png"
                     },
                     [
                         {
                             "t": "进口饼干",
-                            "p" : "超值满减",
-                            "bg" : "images/pic_038.jpg"
+                            "p": "超值满减",
+                            "bg": "images/pic_038.jpg"
                         },
                         {
                             "t": "进口牛奶",
-                            "p" : "领劵满减",
-                            "bg" : "images/pic_039.jpg"
+                            "p": "领劵满减",
+                            "bg": "images/pic_039.jpg"
                         },
                         {
                             "t": "品质洋酒",
-                            "p" : "2件立减",
-                            "bg" : "images/pic_040.jpg"
+                            "p": "2件立减",
+                            "bg": "images/pic_040.jpg"
                         },
                         {
                             "t": "进口米面",
-                            "p" : ",满减优惠",
-                            "bg" : "images/pic_041.jpg"
+                            "p": ",满减优惠",
+                            "bg": "images/pic_041.jpg"
                         }
                     ]
                 ],
                 "top": {
-                    "h3txt":["进口食品", "热销榜", "爆款热卖", "实时更新"],
-                    "imgdata" :["images/pic_044.jpg","images/pic_045.jpg","images/pic_046.jpg","images/pic_047.jpg","images/pic_048.jpg","images/pic_049.jpg","images/pic_051.jpg","images/pic_052.jpg","images/pic_053.jpg"]
-                }
+                    "h3txt": [
+                        "进口食品热销榜",
+                        "爆款热卖 实时更新"
+                    ],
+                    "imgdata": [
+                        [
+                            "images/pic_044.jpg",
+                            "images/pic_045.jpg",
+                            "images/pic_046.jpg"
+                        ],
+                        [
+                            "images/pic_047.jpg",
+                            "images/pic_048.jpg",
+                            "images/pic_049.jpg"
+                        ],
+                        [
+                            "images/pic_050.jpg",
+                            "images/pic_051.jpg",
+                            "images/pic_052.jpg"
+                        ]
+                    ]
+                },
+                "linkdata": [
+                    {
+                        "name": "麦维他",
+                        "lyd": "英国国民平爱"
+                    },
+                    {
+                        "name": "安佳",
+                        "lyd": "新西兰原装进口"
+                    },
+                    {
+                        "name": "科颜氏",
+                        "lyd": "骨头先生精选"
+                    },
+                    {
+                        "name": "曼秀雷敦",
+                        "lyd": "百年护理品牌"
+                    },
+                    {
+                        "name": "dior",
+                        "lyd": "自营彩妆"
+                    },
+                    {
+                        "name": "nike",
+                        "lyd": "just do it "
+                    },
+                    {
+                        "name": "莱家",
+                        "lyd": "奥地利进口"
+                    },
+                    {
+                        "name": "安佳",
+                        "lyd": "新西兰原装进口"
+                    },
+                    {
+                        "name": "麦维他",
+                        "lyd": "骨头先生精选"
+                    },
+                    {
+                        "name": "麦维他",
+                        "lyd": "英国国民平爱"
+                    },
+                    {
+                        "name": "麦维他",
+                        "lyd": "英国国民平爱"
+                    },
+                    {
+                        "name": "麦维他",
+                        "lyd": "英国国民平爱"
+                    },
+                    {
+                        "name": "麦维他",
+                        "lyd": "英国国民平爱"
+                    },
+                    {
+                        "name": "麦维他",
+                        "lyd": "英国国民平爱"
+                    }
+                ]
             },
             {
                 "h2": "甄选新鲜",
                 "small": "每一口都是小幸福",
-                "a" : ["美味水果", "海鲜水产", "鲜鲜蔬菜", "猪牛羊肉", "冷冻食品", "乳品冷饮"],
-                "bg" :"images/pic_061.jpg",
-                "shop" : [
+                "a": [
+                    "美味水果",
+                    "海鲜水产",
+                    "鲜鲜蔬菜",
+                    "猪牛羊肉",
+                    "冷冻食品",
+                    "乳品冷饮"
+                ],
+                "bg": "images/pic_061.jpg",
+                "shop": [
                     {
-                        "h3" : "活色生鲜节",
-                        "p" : "部分领劵满减",
-                        "bg1" : "images/pic_062.png"
+                        "h3": "活色生鲜节",
+                        "p": "部分领劵满减",
+                        "bg1": "images/pic_062.png"
                     },
                     {
-                        "h3" : "品质牛排",
-                        "p" : "部分领劵再减",
-                        "bg1" : "images/pic_067.jpg"
+                        "h3": "品质牛排",
+                        "p": "部分领劵再减",
+                        "bg1": "images/pic_067.png"
                     },
                     [
                         {
                             "t": "进口牛油果",
                             "pic": "38.8",
-                            "bg" : "images/pic_063.jpg"
+                            "bg": "images/pic_063.jpg"
                         },
                         {
                             "t": "泰国黑虎虾",
-                            "pic" : "129",
-                            "bg" : "images/pic_064.jpg"
+                            "pic": "129",
+                            "bg": "images/pic_064.jpg"
                         },
                         {
                             "t": "恒都澳洲牛腩",
-                            "pic" : "26.8",
-                            "bg" : "images/pic_065.jpg"
+                            "pic": "26.8",
+                            "bg": "images/pic_065.jpg"
                         },
                         {
                             "t": "天润浓缩酸奶",
-                            "pic" : "55",
-                            "bg" : "images/pic_066.jpg"
+                            "pic": "55",
+                            "bg": "images/pic_066.jpg"
                         }
                     ]
                 ],
                 "top": {
-                    "h3txt":["唇唇欲动","", "胃之所向","皆美好"],
-                    "imgdata" :["images/pic_068.jpg","images/pic_069.jpg","images/pic_070.jpg","images/pic_071.jpg","images/pic_072.jpg","images/pic_073.jpg","images/pic_074.jpg","images/pic_075.jpg","images/pic_076.jpg"]
+                    "h3txt": [
+                        "唇唇欲动 ",
+                        "胃之所向 皆美好"
+                    ],
+                    "imgdata": [
+                        [
+                            "images/pic_068.jpg",
+                            "images/pic_069.jpg",
+                            "images/pic_070.jpg"
+                        ],
+                        [
+                            "images/pic_071.jpg",
+                            "images/pic_072.jpg",
+                            "images/pic_073.jpg"
+                        ],
+                        [
+                            "images/pic_074.jpg",
+                            "images/pic_075.jpg",
+                            "images/pic_076.jpg"
+                        ]
+                    ]
                 }
             },
             {
                 "h2": "精致女人",
                 "small": "做完美的自己",
-                "a" : ["口红","女装" ,"女包", "卸妆洁面", "香气盎然", "绚丽彩妆"],
-                "bg" :"images/pic_077.jpg",
-                "shop" : [
+                "a": [
+                    "口红",
+                    "女装",
+                    "女包",
+                    "卸妆洁面",
+                    "香气盎然",
+                    "绚丽彩妆"
+                ],
+                "bg": "images/pic_077.jpg",
+                "shop": [
                     {
-                        "h3" : "护肤品",
-                        "p" : "爆款直降",
-                        "bg1" : "images/pic_078.png"
+                        "h3": "护肤品",
+                        "p": "爆款直降",
+                        "bg1": "images/pic_078.png"
                     },
                     {
-                        "h3" : "彩妆",
-                        "p" : "爆款直降",
-                        "bg1" : "images/pic_083.jpg"
+                        "h3": "彩妆",
+                        "p": "爆款直降",
+                        "bg1": "images/pic_083.png"
                     },
                     [
                         {
                             "t": "迪奥粉色唇蜜",
                             "pic": "300",
-                            "bg" : "images/pic_079.jpg"
+                            "bg": "images/pic_079.jpg"
                         },
                         {
                             "t": "美迪惠尔面膜",
-                            "pic" : "119",
-                            "bg" : "images/pic_080.jpg"
+                            "pic": "119",
+                            "bg": "images/pic_080.jpg"
                         },
                         {
                             "t": "范思哲香水",
-                            "pic" : "349",
-                            "bg" : "images/pic_081.jpg"
+                            "pic": "349",
+                            "bg": "images/pic_081.jpg"
                         },
                         {
                             "t": "雅诗兰黛眼霜",
-                            "pic" : "590",
-                            "bg" : "images/pic_082.jpg"
+                            "pic": "590",
+                            "bg": "images/pic_082.jpg"
                         }
                     ]
                 ],
                 "top": {
-                    "h3txt":["面膜热销","排行榜", "爆款热卖","实时更新"],
-                    "imgdata" :["images/pic_084.jpg","images/pic_085.jpg","images/pic_086.jpg","images/pic_087.jpg","images/pic_088.jpg","images/pic_089.jpg","images/pic_090.jpg","images/pic_091.jpg","images/pic_082.jpg"]
+                    "h3txt": [
+                        "面膜热销排行榜",
+                        "爆款热卖 实时更新"
+                    ],
+                    "imgdata": [
+                        [
+                            "images/pic_084.jpg",
+                            "images/pic_085.jpg",
+                            "images/pic_086.jpg"
+                        ],
+                        [
+                            "images/pic_087.jpg",
+                            "images/pic_088.jpg",
+                            "images/pic_089.jpg"
+                        ],
+                        [
+                            "images/pic_090.jpg",
+                            "images/pic_091.jpg",
+                            "images/pic_082.jpg"
+                        ]
+                    ]
                 }
             },
             {
                 "h2": "科技质感",
                 "small": "营造美好生活",
-                "a" : ["热销手机", "轻薄电脑", "厨房电器", "生活电器", "娱乐音影", "办公设备"],
-                "bg" :"images/pic_093.jpg",
-                "shop" : [
+                "a": [
+                    "热销手机",
+                    "轻薄电脑",
+                    "厨房电器",
+                    "生活电器",
+                    "娱乐音影",
+                    "办公设备"
+                ],
+                "bg": "images/pic_093.jpg",
+                "shop": [
                     {
-                        "h3" : "大牌让利",
-                        "p" : "爆款直降",
-                        "bg1" : "images/pic_084.png"
+                        "h3": "大牌让利",
+                        "p": "爆款直降",
+                        "bg1": "images/pic_094.png"
                     },
                     {
-                        "h3" : "家电狂欢",
-                        "p" : "爆款直降",
-                        "bg1" : "images/pic_099.jpg"
+                        "h3": "家电狂欢",
+                        "p": "爆款直降",
+                        "bg1": "images/pic_099.png"
                     },
                     [
                         {
                             "t": "荣耀全屏手机",
                             "pic": "1199",
-                            "bg" : "images/pic_095.jpg"
+                            "bg": "images/pic_095.jpg"
                         },
                         {
                             "t": "小米平衡车",
-                            "pic" : "1999",
-                            "bg" : "images/pic_096.jpg"
+                            "pic": "1999",
+                            "bg": "images/pic_096.jpg"
                         },
                         {
                             "t": "博朗剃须刀",
-                            "pic" : "298",
-                            "bg" : "images/pic_097.jpg"
+                            "pic": "298",
+                            "bg": "images/pic_097.jpg"
                         },
                         {
                             "t": "佳能单反套机",
-                            "pic" : "4699",
-                            "bg" : "images/pic_098.jpg"
+                            "pic": "4699",
+                            "bg": "images/pic_098.jpg"
                         }
                     ]
                 ],
                 "top": {
-                    "h3txt":["手机通讯","", "狂欢就要","大视野"],
-                    "imgdata" :["images/pic_100.jpg","images/pic_101.jpg","images/pic_102.jpg","images/pic_103.jpg","images/pic_104.jpg","images/pic_105.jpg","images/pic_106.jpg","images/pic_107.jpg","images/pic_108.jpg"]
+                    "h3txt": [
+                        "手机通讯",
+                        "狂欢就要 大视野"
+                    ],
+                    "imgdata": [
+                        [
+                            "images/pic_100.jpg",
+                            "images/pic_101.jpg",
+                            "images/pic_102.jpg"
+                        ],
+                        [
+                            "images/pic_103.jpg",
+                            "images/pic_104.jpg",
+                            "images/pic_105.jpg"
+                        ],
+                        [
+                            "images/pic_106.jpg",
+                            "images/pic_107.jpg",
+                            "images/pic_108.jpg"
+                        ]
+                    ]
                 }
             }
         ]

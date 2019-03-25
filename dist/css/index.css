@@ -1,8 +1,707 @@
 @import url(common.css);
 @import url(public.css);
 @import url(swiper.css);
+@import url(common.css);
+#needLazyLoad {
+  height: 501px;
+  margin-top: 20px; }
+  #needLazyLoad .quality-imoport {
+    height: 501px;
+    margin-top: 20px;
+    background-color: #fff; }
+    #needLazyLoad .quality-imoport .qua-show {
+      width: 899px;
+      height: 421px;
+      float: left; }
+      #needLazyLoad .quality-imoport .qua-show .qua-tit {
+        height: 67px; }
+        #needLazyLoad .quality-imoport .qua-show .qua-tit .qua-tit-top {
+          margin-top: 17px;
+          height: 35px;
+          margin-left: 20px;
+          margin-top: 12px;
+          font-size: 26px;
+          color: #92a700;
+          display: inline-block;
+          cursor: pointer;
+          max-width: 190px;
+          overflow: hidden; }
+        #needLazyLoad .quality-imoport .qua-show .qua-tit .qua-tit-spanLast {
+          margin-left: 8px;
+          font-size: 16px;
+          color: #b6c166;
+          color: rgba(133, 152, 0, 0.7);
+          margin-top: 27px;
+          height: 21px;
+          cursor: pointer;
+          display: inline-block;
+          max-width: 208px;
+          overflow: hidden;
+          position: relative;
+          top: -3px; }
+      #needLazyLoad .quality-imoport .qua-show .qua-show-con {
+        width: 900px;
+        height: 334px;
+        position: relative;
+        padding-left: 20px; }
+        #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-left {
+          position: relative;
+          width: 189px;
+          height: 334px;
+          float: left; }
+        #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-left-font-con {
+          font-size: 14px;
+          color: #fff;
+          position: absolute;
+          width: 176px;
+          height: 90px;
+          margin-left: 14px;
+          top: 16px; }
+          #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-left-font-con a {
+            background: rgba(255, 255, 255, 0.1) !important;
+            border: 1px solid rgba(255, 255, 255, 0.61) !important;
+            width: 74px;
+            height: 23px;
+            text-align: center;
+            line-height: 23px;
+            float: left;
+            margin-right: 9px;
+            margin-bottom: 9px;
+            cursor: pointer;
+            color: #fff;
+            overflow: hidden; }
+          #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-left-font-con a:hover {
+            background: rgba(255, 255, 255, 0.3) !important; }
+        #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right {
+          width: 680px;
+          height: 334px;
+          float: left; }
+          #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .import-snacks {
+            width: 335px;
+            height: 167px;
+            position: relative;
+            float: left;
+            background-color: #faf7f6;
+            background-image: -webkit-linear-gradient(225deg, #fafaf9 0%, #faf7f6 100%);
+            background-image: -moz-linear-gradient(225deg, #fafaf9 0%, #faf7f6 100%);
+            background-image: -o-linear-gradient(225deg, #fafaf9 0%, #faf7f6 100%);
+            background-image: linear-gradient(-135deg, #fafaf9 0%, #faf7f6 100%);
+            cursor: pointer; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .import-snacks .import-tit {
+              margin-top: 40px;
+              color: #793a11;
+              white-space: nowrap;
+              overflow: hidden;
+              -o-text-overflow: ellipsis;
+              text-overflow: ellipsis;
+              width: 150px; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .import-snacks .voucher-tit {
+              color: #b77347;
+              margin-top: 5px;
+              white-space: nowrap;
+              overflow: hidden;
+              -o-text-overflow: ellipsis;
+              text-overflow: ellipsis;
+              width: 150px; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .import-snacks .buy-btn {
+              border: 1px solid rgba(192, 132, 92, 0.5);
+              width: 78px;
+              height: 27px;
+              text-align: center;
+              line-height: 27px;
+              margin-top: 15px;
+              color: #c0845c;
+              cursor: pointer;
+              overflow: hidden; }
+              #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .import-snacks .buy-btn:hover {
+                background: #fff; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .import-snacks p {
+              margin-left: 30px;
+              font-size: 14px; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .import-snacks div {
+              margin-left: 30px;
+              font-size: 14px; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .import-snacks img {
+              position: absolute;
+              right: 30px;
+              bottom: 27px;
+              -webkit-transition: -webkit-transform .4s ease;
+              transition: -webkit-transform .4s ease;
+              -o-transition: -o-transform .4s ease;
+              -moz-transition: transform .4s ease,-moz-transform .4s ease;
+              transition: transform .4s ease;
+              transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease,-o-transform .4s ease;
+              cursor: pointer;
+              width: 110px;
+              height: 110px; }
+          #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .bursting {
+            float: left;
+            position: relative;
+            width: 167px;
+            height: 167px;
+            cursor: pointer; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .bursting p {
+              margin-left: 15px;
+              font-size: 14px;
+              color: #666;
+              margin-top: 15px;
+              overflow: hidden;
+              height: 14px;
+              width: 102px;
+              line-height: 1;
+              margin-bottom: 7px; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .bursting .bkzj {
+              color: #999;
+              margin-top: -1px !important; }
+            #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .bursting img {
+              position: absolute;
+              width: 90px;
+              height: 90px;
+              bottom: 10px;
+              right: 10px;
+              margin-top: 15px;
+              margin-left: 15px;
+              -webkit-transition: -webkit-transform .4s ease;
+              transition: -webkit-transform .4s ease;
+              -o-transition: -o-transform .4s ease;
+              -moz-transition: transform .4s ease,-moz-transform .4s ease;
+              transition: transform .4s ease;
+              transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease,-o-transform .4s ease;
+              cursor: pointer; }
+          #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right .bursting:nth-child(even) {
+            border-right: 1px solid #f6f6f6; }
+          #needLazyLoad .quality-imoport .qua-show .qua-show-con .qua-show-con-right img:hover {
+            transform: translate3d(-5px, 0, 0); }
+    #needLazyLoad .quality-imoport .qua-top {
+      width: 170px;
+      height: 421px;
+      float: left;
+      border-left: 1px solid #f6f6f6;
+      position: relative; }
+      #needLazyLoad .quality-imoport .qua-top .qua-paihang {
+        margin-left: 81px;
+        position: absolute;
+        width: 71px;
+        background: 0; }
+      #needLazyLoad .quality-imoport .qua-top .qua-top-font {
+        font-size: 16px;
+        color: #333;
+        margin-top: 20px; }
+      #needLazyLoad .quality-imoport .qua-top p {
+        margin-left: 20.5px;
+        font-size: 14px;
+        color: #999;
+        margin-top: 7px;
+        width: 130px;
+        height: 21px;
+        overflow: hidden;
+        white-space: nowrap; }
+      #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon {
+        overflow: hidden;
+        position: absolute;
+        height: 317px;
+        width: 120px;
+        left: 28px;
+        bottom: 39px; }
+        #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon .qua-top-slideInner {
+          -webkit-transition: all .5s ease;
+          -o-transition: all .5s ease;
+          -moz-transition: all .5s ease;
+          transition: all .5s ease;
+          position: relative;
+          left: 10px; }
+          #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon .qua-top-slideInner .qua-top-slideCon-ul {
+            position: relative;
+            height: 100%;
+            float: left;
+            left: 2px;
+            margin-right: 120px;
+            -webkit-transition: left .6s ease;
+            -o-transition: left .6s ease;
+            -moz-transition: left .6s ease;
+            transition: left .6s ease; }
+            #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon .qua-top-slideInner .qua-top-slideCon-ul .qua-top-imgCon {
+              width: 90px;
+              height: 90px;
+              position: relative;
+              background-color: #fff;
+              -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+              -moz-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+              box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.07);
+              margin-bottom: 11px;
+              cursor: pointer;
+              overflow: hidden; }
+              #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon .qua-top-slideInner .qua-top-slideCon-ul .qua-top-imgCon .qua-imgCon-font {
+                position: absolute;
+                background: gold;
+                font-size: 12px;
+                color: #fff;
+                width: 40px;
+                height: 16px;
+                text-align: center;
+                font-family: Tahoma;
+                font-weight: bold; }
+              #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon .qua-top-slideInner .qua-top-slideCon-ul .qua-top-imgCon img {
+                margin-top: 15px !important;
+                margin-left: 15px !important;
+                width: 60px !important;
+                height: 60px !important; }
+            #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon .qua-top-slideInner .qua-top-slideCon-ul .qua-top-imgCon:nth-child(3n+1) {
+              margin-top: 13px; }
+            #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon .qua-top-slideInner .qua-top-slideCon-ul a:nth-child(2) .qua-imgCon-font {
+              background: #ccc; }
+            #needLazyLoad .quality-imoport .qua-top .qua-top-slideCon .qua-top-slideInner .qua-top-slideCon-ul a:nth-child(3) .qua-imgCon-font {
+              background: burlywood; }
+      #needLazyLoad .quality-imoport .qua-top .qua-top-btn {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+        background: #ebebeb;
+        color: #fff;
+        bottom: 20px;
+        text-align: center;
+        line-height: 16px;
+        background: #d5d5d5;
+        cursor: pointer; }
+        #needLazyLoad .quality-imoport .qua-top .qua-top-btn:hover {
+          background-color: #666; }
+      #needLazyLoad .quality-imoport .qua-top .qua-top-btn-forbid {
+        background-color: #ebebeb !important; }
+        #needLazyLoad .quality-imoport .qua-top .qua-top-btn-forbid:hover {
+          background-color: #ebebeb !important; }
+      #needLazyLoad .quality-imoport .qua-top .qua-top-left-btn {
+        left: 60px; }
+      #needLazyLoad .quality-imoport .qua-top .qua-top-left-btn i {
+        font-size: 14px; }
+      #needLazyLoad .quality-imoport .qua-top .qua-top-right-btn {
+        left: 94px;
+        padding-left: 2px; }
+      #needLazyLoad .quality-imoport .qua-top .qua-top-right-btn i {
+        font-size: 10px; }
+    #needLazyLoad .quality-imoport .qua-brand {
+      width: 100%;
+      height: 80px;
+      border-top: 1px solid #f6f6f6;
+      position: relative; }
+      #needLazyLoad .quality-imoport .qua-brand .qua-brand-btn {
+        width: 15px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        -webkit-box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.08);
+        box-shadow: 1px 0 10px 0 rgba(0, 0, 0, 0.08);
+        -moz-border-radius: 0 6px 6px 0;
+        border-radius: 0 6px 6px 0;
+        line-height: 40px;
+        z-index: 1000;
+        color: #b1b1b1;
+        cursor: pointer; }
+        #needLazyLoad .quality-imoport .qua-brand .qua-brand-btn i {
+          position: relative;
+          left: -1px; }
+      #needLazyLoad .quality-imoport .qua-brand .active {
+        color: #e2e2e2 !important; }
+      #needLazyLoad .quality-imoport .qua-brand .qua-brand-left-btn {
+        left: 0; }
+      #needLazyLoad .quality-imoport .qua-brand .qua-brand-right-btn {
+        right: 0px !important;
+        left: auto;
+        -moz-border-radius: 6px 0 0 6px;
+        border-radius: 6px 0 0 6px; }
+      #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer; }
+        #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con ul {
+          width: 9999px;
+          top: 0;
+          left: 0;
+          height: 100%;
+          position: absolute; }
+        #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img {
+          width: 152px;
+          height: 80px;
+          background-color: #fff;
+          float: left;
+          position: relative; }
+          #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a {
+            display: block;
+            width: 100%;
+            height: 100%; }
+            #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a img {
+              transition: opacity 1.5s ease;
+              cursor: pointer;
+              width: 80px;
+              height: 80px;
+              position: absolute;
+              margin-left: -40px;
+              left: 50%; }
+              #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a img:hover {
+                opacity: .4; }
+            #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a .qua-brand-img-hover {
+              z-index: -1;
+              opacity: 0;
+              filter: Alpha(opacity=0);
+              width: 100%;
+              height: 0;
+              background-color: #fff;
+              position: absolute;
+              left: 0;
+              top: 0;
+              -webkit-transition: opacity 1.5s ease;
+              -o-transition: opacity 1.5s ease;
+              -moz-transition: opacity 1.5s ease;
+              transition: opacity 1.5s ease; }
+            #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a .qua-brand-img-hover-name {
+              color: #333;
+              font-size: 14px;
+              font-weight: bold;
+              width: 100px;
+              text-align: center;
+              line-height: 23px;
+              height: 23px;
+              position: absolute;
+              top: 22px;
+              left: 50%;
+              margin-left: -50px;
+              z-index: -1;
+              opacity: 0;
+              filter: Alpha(opacity=0);
+              -webkit-transition: opacity 1.5s ease;
+              -o-transition: opacity 1.5s ease;
+              -moz-transition: opacity 1.5s ease;
+              transition: opacity 1.5s ease; }
+            #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a .qua-brand-img-hover-lyd {
+              color: #666;
+              font-size: 12px;
+              width: 120px;
+              text-align: center;
+              line-height: 14px;
+              height: 14px;
+              top: 46px;
+              margin-left: -60px;
+              left: 50%;
+              position: absolute;
+              font-weight: bold;
+              z-index: -1;
+              opacity: 0;
+              filter: Alpha(opacity=0);
+              -webkit-transition: opacity 1.5s ease;
+              -o-transition: opacity 1.5s ease;
+              -moz-transition: opacity 1.5s ease;
+              transition: opacity 1.5s ease; }
+              #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a .qua-brand-img-hover-lyd span {
+                width: 10px;
+                height: 1px;
+                background: #e2e2e2;
+                display: inline-block;
+                position: relative;
+                top: -3px; }
+              #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a .qua-brand-img-hover-lyd .qua-brand-hover-hover-leftLine {
+                margin-right: 5px; }
+              #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a .qua-brand-img-hover-lyd .qua-brand-hover-hover-rightLine {
+                margin-left: 5px; }
+            #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img a .text-limit {
+              white-space: nowrap;
+              -o-text-overflow: ellipsis;
+              text-overflow: ellipsis;
+              overflow: hidden; }
+          #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img:hover .qua-brand-img-hover {
+            opacity: .9;
+            height: 100%;
+            z-index: 100;
+            cursor: pointer; }
+          #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img:hover .qua-brand-img-hover-lyd {
+            opacity: 1;
+            z-index: 100; }
+          #needLazyLoad .quality-imoport .qua-brand .qua-brand-img-con .qua-brand-img:hover .qua-brand-img-hover-name {
+            opacity: 1;
+            z-index: 100; }
+  #needLazyLoad .eat-all-word {
+    height: 421px !important; }
+
 .new-person {
   width: 1070px;
   height: 110px;
   margin-top: 20px;
   cursor: pointer; }
+
+.single-con {
+  background: 0;
+  width: 100%;
+  height: 444px;
+  margin-top: 20px;
+  position: relative; }
+  .single-con .superSingle {
+    position: relative;
+    width: 1070px;
+    margin: 0 auto;
+    height: 370px;
+    background: url(../images/super_single_bg.png); }
+    .single-con .superSingle ul {
+      width: 1050px;
+      height: 432px;
+      margin: 0 auto;
+      position: relative;
+      top: 10px; }
+      .single-con .superSingle ul .single-one {
+        background: none; }
+        .single-con .superSingle ul .single-one a .single-logo {
+          width: 129px;
+          height: 36px;
+          margin-left: 20px;
+          margin-top: 22px;
+          cursor: pointer; }
+        .single-con .superSingle ul .single-one .single-text {
+          width: 180px;
+          height: 40px;
+          margin-left: 24px;
+          position: relative;
+          overflow: hidden; }
+          .single-con .superSingle ul .single-one .single-text .sing-text-font {
+            font-size: 14px;
+            color: #fff;
+            color: rgba(255, 255, 255, 0.8);
+            display: block;
+            margin-right: 8px;
+            float: left;
+            height: 22px;
+            float: left;
+            font-weight: bold;
+            cursor: pointer;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            overflow: hidden; }
+        .single-con .superSingle ul .single-one .sing-text-line {
+          border-bottom: 3px solid #fff;
+          position: absolute;
+          height: 1px;
+          width: 28px;
+          left: 0px;
+          top: 27px; }
+        .single-con .superSingle ul .single-one .single-djs {
+          width: 137px;
+          height: 66px;
+          margin-left: 24px;
+          margin-top: 10px; }
+          .single-con .superSingle ul .single-one .single-djs .djs-title {
+            width: 100%;
+            color: #fff;
+            font-size: 16px;
+            line-height: 26px; }
+            .single-con .superSingle ul .single-one .single-djs .djs-title i {
+              font-size: 22px;
+              position: relative;
+              top: 2px; }
+            .single-con .superSingle ul .single-one .single-djs .djs-title .s-text {
+              display: inline-block; }
+          .single-con .superSingle ul .single-one .single-djs .count-time {
+            height: 26px;
+            font-size: 0;
+            text-align: center;
+            margin-top: 9px; }
+            .single-con .superSingle ul .single-one .single-djs .count-time span {
+              display: inline-block;
+              width: 35px;
+              height: 35px;
+              line-height: 35px;
+              text-align: center;
+              background-color: #161616;
+              color: #fff;
+              font-size: 20px;
+              font-family: Tahoma;
+              font-weight: bold;
+              -moz-border-radius: 10px;
+              border-radius: 10px; }
+            .single-con .superSingle ul .single-one .single-djs .count-time i {
+              display: inline-block;
+              width: 16px;
+              height: 35px;
+              line-height: 35px;
+              text-align: center;
+              font-size: 14px;
+              font-weight: bold;
+              color: #fff;
+              position: relative;
+              top: -3px;
+              font-style: normal; }
+      .single-con .superSingle ul li {
+        background-color: #fff;
+        width: 210px;
+        height: 216px;
+        float: left;
+        font-size: 14px; }
+        .single-con .superSingle ul li .superSingle-a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+          .single-con .superSingle ul li .superSingle-a .single-top {
+            width: 210px;
+            height: 135px;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center;
+            position: relative; }
+            .single-con .superSingle ul li .superSingle-a .single-top .s-bz {
+              height: 24px;
+              -moz-border-radius: 0 0 12px 12px;
+              color: #fff;
+              position: relative;
+              top: 10px;
+              line-height: 24px;
+              display: inline-block;
+              z-index: 1; }
+            .single-con .superSingle ul li .superSingle-a .single-top .single-top-img {
+              width: 110px;
+              height: 110px;
+              position: absolute;
+              top: 15px;
+              left: 50%;
+              margin-left: -55px; }
+          .single-con .superSingle ul li .superSingle-a .single-bottom {
+            height: 81px;
+            width: 150px;
+            margin: 0 auto;
+            position: relative; }
+            .single-con .superSingle ul li .superSingle-a .single-bottom .s-title {
+              width: 153px;
+              height: 20px;
+              overflow: hidden;
+              white-space: nowrap;
+              -o-text-overflow: ellipsis;
+              text-overflow: ellipsis; }
+            .single-con .superSingle ul li .superSingle-a .single-bottom .s-bar {
+              width: 150px;
+              height: 6px;
+              margin-top: 10px;
+              background-color: #e2e2e2;
+              -moz-border-radius: 100px;
+              border-radius: 100px; }
+              .single-con .superSingle ul li .superSingle-a .single-bottom .s-bar .s-progress {
+                width: 60%;
+                height: 100%;
+                -moz-border-radius: 100px;
+                border-radius: 100px;
+                background-color: #d9161d;
+                background-image: -webkit-gradient(linear, right top, left top, from(#d9161d), to(#f0444d));
+                background-image: -webkit-linear-gradient(right, #d9161d 0%, #f0444d 100%);
+                background-image: -moz-linear-gradient(right, #d9161d 0%, #f0444d 100%);
+                background-image: -o-linear-gradient(right, #d9161d 0%, #f0444d 100%);
+                background-image: linear-gradient(-90deg, #d9161d 0%, #f0444d 100%); }
+            .single-con .superSingle ul li .superSingle-a .single-bottom .s-con {
+              height: 33px;
+              padding-top: 12px;
+              position: relative;
+              overflow: hidden;
+              text-align: center; }
+              .single-con .superSingle ul li .superSingle-a .single-bottom .s-con .s-num {
+                display: inline-block;
+                font-family: Tahoma,"Microsoft YaHei";
+                color: #e50113;
+                font-weight: bold;
+                font-size: 14px; }
+                .single-con .superSingle ul li .superSingle-a .single-bottom .s-con .s-num .s-num-act {
+                  margin-left: -3px; }
+                .single-con .superSingle ul li .superSingle-a .single-bottom .s-con .s-num .s-num-underline {
+                  text-decoration: line-through;
+                  font-size: 12px;
+                  color: #999;
+                  font-weight: normal;
+                  margin-left: 4px; }
+                  .single-con .superSingle ul li .superSingle-a .single-bottom .s-con .s-num .s-num-underline .s-num-line {
+                    margin-left: -3px; }
+      .single-con .superSingle ul li:not(.single-one) {
+        cursor: pointer; }
+        .single-con .superSingle ul li:not(.single-one):hover {
+          background: #fff;
+          -webkit-box-shadow: 0 5px 31px 0 rgba(0, 0, 0, 0.09);
+          -moz-box-shadow: 0 5px 31px 0 rgba(0, 0, 0, 0.09);
+          box-shadow: 0 5px 31px 0 rgba(0, 0, 0, 0.09);
+          -webkit-transform: scale(1.06);
+          -moz-transform: scale(1.06);
+          -ms-transform: scale(1.06);
+          -o-transform: scale(1.06);
+          transform: scale(1.06); }
+  .single-con .happy-summer {
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: 540px;
+    top: 0px;
+    z-index: 10000; }
+    .single-con .happy-summer img {
+      cursor: pointer; }
+    .single-con .happy-summer .happy-bott {
+      background-color: #fff;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+      line-height: 14px; }
+      .single-con .happy-summer .happy-bott .down-app {
+        height: 30px;
+        line-height: 34px;
+        letter-spacing: 1px; }
+      .single-con .happy-summer .happy-bott .happy-ewm {
+        cursor: auto;
+        width: 76px;
+        cursor: pointer; }
+      .single-con .happy-summer .happy-bott .h-logo {
+        width: 100px; }
+    .single-con .happy-summer .h-gws {
+      width: 100%;
+      height: 40px;
+      background-color: #fff;
+      border-top: 1px solid #f0f0f0;
+      font-size: 14px;
+      cursor: pointer;
+      position: relative;
+      display: block;
+      text-align: center;
+      line-height: 40px; }
+      .single-con .happy-summer .h-gws i {
+        color: #272636;
+        font-size: 20px;
+        position: relative;
+        top: 1px; }
+      .single-con .happy-summer .h-gws .hd-c-num {
+        position: absolute;
+        z-index: 601;
+        top: 2px;
+        right: 2px;
+        min-width: 12px;
+        height: 18px;
+        padding: 0 3px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        background: #ff4040;
+        color: #fff;
+        font-family: Tahoma;
+        font-size: 12px;
+        text-decoration: none;
+        line-height: 17px;
+        text-align: center; }
+      .single-con .happy-summer .h-gws .none {
+        display: none; }
+    .single-con .happy-summer .h-zd {
+      font-size: 14px;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      line-height: 29px;
+      background-color: #444;
+      color: #fff;
+      font-family: Tahoma;
+      cursor: pointer;
+      display: block; }
+      .single-con .happy-summer .h-zd i {
+        color: #fff;
+        position: relative;
+        top: 2px;
+        font-size: 20px; }
