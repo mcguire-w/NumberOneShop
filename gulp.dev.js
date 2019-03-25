@@ -20,13 +20,12 @@ gulp.task('allFile', function() {
 gulp.task('watch', function() {
   gulp.watch(['app/**/*', '!app/sass/**/*'], ['allFile']);
   gulp.watch('app/sass/**/*.scss', ['sass']);
-
 })
 gulp.task('server', function() {
   connect.server({
     root: 'dist', //设置根目录
     livereload: true, // 是否热更新
-    port: 7777
+    port: 7070
   });
 })
 
