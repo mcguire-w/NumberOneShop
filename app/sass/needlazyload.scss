@@ -73,6 +73,9 @@
                         color: #fff;
                         overflow: hidden;  
                     }
+                    a:hover{
+                        background: rgba(255,255,255,0.3) !important;
+                    }
                 }
                 .qua-show-con-right{
                     width: 680px;
@@ -117,6 +120,9 @@
                             color: #c0845c;
                             cursor: pointer;
                             overflow: hidden;
+                            &:hover{
+                                background: #fff;
+                            }
                         }
                         p{
                             margin-left: 30px;
@@ -151,7 +157,7 @@
                             margin-left: 15px;
                             font-size: 14px;
                             color: #666;
-                            margin-top: -1px;
+                            margin-top: 15px;
                             overflow: hidden;
                             height: 14px;
                             width: 102px;
@@ -160,6 +166,7 @@
                         }
                         .bkzj{
                             color:#999;
+                            margin-top:-1px !important; 
                         }
                         img{
                             position: absolute;
@@ -177,6 +184,12 @@
                             transition: transform .4s ease,-webkit-transform .4s ease,-moz-transform .4s ease,-o-transform .4s ease;
                             cursor: pointer;
                         }
+                    }
+                    .bursting:nth-child(even){
+                        border-right: 1px solid #f6f6f6;
+                    }
+                    img:hover{
+                        transform: translate3d(-5px,0,0);
                     }
                 }
             }

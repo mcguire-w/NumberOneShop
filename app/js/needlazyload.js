@@ -43,7 +43,7 @@ var needLazyLoad = (function(){
             <a href="" class="import-snacks">
                 <p class="import-tit">${data.shop[1].h3}</p>
                 <p class="voucher-tit">${data.shop[1].p}</p>
-                <div class="buy-btn"></div>
+                <div class="buy-btn">点击进入</div>
                 <img src="${data.shop[1].bg1}" alt="">
             </a>
             `;
@@ -62,10 +62,11 @@ var needLazyLoad = (function(){
                         <div class="qua-left-font-con">
                             ${str2}
                         </div>
+                        <div class="qua-show-con-right">
+                            ${str3}
+                        </div>
                     </div>
-                    <div class="qua-show-con-right">
-                        ${str3}
-                    </div>
+                    
                 </div>
                 
             </div>
