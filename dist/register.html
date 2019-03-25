@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/reg&login.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css">
 </head>
-
 <body>
     <div class="top">
         <div class="top-cont">
@@ -50,7 +51,7 @@
                                 <i></i>
                                 <p>请输入正确的用户名,用户名应为4-20位字符</p>
                             </div>
-                            <div class="ture"></div>
+                            <div class="true"></div>
                         </div>
                     </li>
                     <li>
@@ -63,7 +64,7 @@
                                 <i></i>
                                 <p>格式错误，请输入正确的手机号码</p>
                             </div>
-                            <div class="ture"></div>
+                            <div class="true"></div>
                         </div>
                     </li>
                     <li>
@@ -71,7 +72,7 @@
                             <input class="input" type="text" id="phoneyzm">
                             <span>短信验证码</span>
                         </div>
-                        <a class="getyzm" href="">获取验证码</a>
+                        <a class="getyzm" href="#" onclick=" return false;">获取验证码</a>
                     </li>
                     <li>
                         <div class="item">
@@ -79,11 +80,11 @@
                             <span>设置密码</span>
                         </div>
                         <div class="tishi">
-                                <div class="false">
-                                    <i></i>
-                                    <p>密码不能为空</p>
-                                </div>
-                                <div class="ture"></div>
+                            <div class="false">
+                                <i></i>
+                                <p>密码不能为空</p>
+                            </div>
+                            <div class="true"></div>
                         </div>
                     </li>
                     <li>
@@ -92,11 +93,11 @@
                             <span>确认密码</span>
                         </div>
                         <div class="tishi">
-                                <div class="false">
-                                    <i></i>
-                                    <p>两次输入不一致</p>
-                                </div>
-                                <div class="ture"></div>
+                            <div class="false">
+                                <i></i>
+                                <p>两次输入不一致</p>
+                            </div>
+                            <div class="true"></div>
                         </div>
                     </li>
                     <li>
@@ -104,7 +105,7 @@
                             点击注册，表示您同意1号店
                             <a href="">《服务协议及隐私声明》</a>
                         </div>
-                        <a  class='btn' href="#" id="button">同意协议并注册</a>
+                        <p class='btn' id="button">同意协议并注册</p>
                     </li>
 
                 </ul>
@@ -121,7 +122,25 @@
             <p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
         </div>
     </div>
+    <div id="hidden">
+        <button type="button" class="am-btn am-btn-primary" data-am-modal="{target: '#my-alert'}">
+            Alert
+        </button>
+    </div>
+        <div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+            <div class="am-modal-dialog">
+                <div class="am-modal-hd">恭喜</div>
+                <div class="am-modal-bd">
+                    注册成功，点击跳转到登入界面
+                </div>
+                <div class="am-modal-footer">
+                    <span class="am-modal-btn">确定</span>
+                </div>
+            </div>
+        </div>
+    <script src="js/api.js"></script>
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.js"></script>
     <script src="js/register.js"></script>
 </body>
 

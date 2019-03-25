@@ -40,77 +40,13 @@ img {
 .clear-fix {
   zoom: 1; }
 
-.top-cont, .main-cont, .bottom-cont {
+.main-cont {
   width: 1195px;
   margin: 0 auto; }
 
-/*!top*/
-.top {
-  height: 82px;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1; }
-  .top .top-cont {
-    height: 80px;
-    position: relative; }
-    .top .top-cont .logo {
-      display: inline-block;
-      width: 145px;
-      height: 55px;
-      background: url(../images/regLogo.jpg) no-repeat;
-      margin-top: 16px; }
-    .top .top-cont .top-right {
-      height: 18px;
-      width: 293px;
-      position: absolute;
-      top: 14px;
-      right: 0;
-      font-size: 12px;
-      line-height: 18px;
-      color: #999999; }
-      .top .top-cont .top-right span {
-        float: left;
-        width: 168px; }
-        .top .top-cont .top-right span a:hover {
-          color: #e60012; }
-      .top .top-cont .top-right .help-box {
-        display: flex;
-        float: right;
-        width: 86px;
-        height: 12px;
-        margin-left: 36px;
-        position: relative;
-        z-index: 999; }
-        .top .top-cont .top-right .help-box a {
-          color: #333;
-          margin-left: 5px;
-          z-index: 2; }
-          .top .top-cont .top-right .help-box a:hover {
-            color: #e60012; }
-        .top .top-cont .top-right .help-box em {
-          color: #cccccc; }
-        .top .top-cont .top-right .help-box .help-ul {
-          display: none;
-          width: 88px;
-          position: absolute;
-          top: -5px;
-          right: 0;
-          height: 130px;
-          border: 1px solid #ccc; }
-          .top .top-cont .top-right .help-box .help-ul li {
-            height: 25px;
-            border-bottom: 1px dotted #ccc;
-            text-align: center;
-            line-height: 24px; }
-            .top .top-cont .top-right .help-box .help-ul li a {
-              color: #333; }
-              .top .top-cont .top-right .help-box .help-ul li a:hover {
-                color: #e60012; }
-            .top .top-cont .top-right .help-box .help-ul li:last-child {
-              border: none; }
-
 /*!main*/
 .main {
-  height: 470px;
+  height: 534px;
   position: relative;
   border-bottom: 1px solid #f4f4f4;
   background: #fcfcfc;
@@ -152,14 +88,13 @@ img {
           border-radius: 3px; }
           .main .main-cont .form .form-ul li .item .input {
             position: relative;
-            z-index: 2;
+            z-index: 5;
             width: 288px;
             height: 20px;
             margin-top: 15px;
             padding: 0px 20px;
             background: 0;
             border: 0;
-            outline: 0;
             font-size: 14px;
             line-height: 20px;
             color: #666; }
@@ -218,12 +153,15 @@ img {
           font-size: 14px; }
         .main .main-cont .form .form-ul li .tishi {
           position: absolute;
+          padding: 5px;
           left: 348px;
           top: 0;
           font-size: 12px;
           color: #fff;
           display: none; }
           .main .main-cont .form .form-ul li .tishi .false {
+            width: 100%;
+            height: 100%;
             background: #c4c4c4; }
             .main .main-cont .form .form-ul li .tishi .false i {
               position: absolute;
@@ -235,11 +173,13 @@ img {
               border-style: dashed solid dashed dashed;
               border-width: 5px; }
             .main .main-cont .form .form-ul li .tishi .false p {
+              margin: auto 0;
               max-width: 160px;
+              height: 40px;
               line-height: 20px;
               color: #666;
-              font-size: 12; }
-          .main .main-cont .form .form-ul li .tishi .ture {
+              font-size: 12px; }
+          .main .main-cont .form .form-ul li .tishi .true {
             display: none;
             position: absolute;
             top: 14px;
@@ -265,15 +205,10 @@ img {
           line-height: 52px;
           color: #fff;
           text-align: center;
-          border-radius: 2px; }
+          border-radius: 2px;
+          cursor: pointer; }
+          .main .main-cont .form .form-ul li .btn:hover {
+            background: #d72226; }
 
-/*!bottom*/
-.bottom {
-  height: 68px; }
-  .bottom .bottom-cont {
-    font-size: 12px;
-    margin: 20px auto 0;
-    text-align: center; }
-    .bottom .bottom-cont a {
-      margin: 0 8px;
-      color: #333; }
+#hidden {
+  display: none; }

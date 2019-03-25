@@ -1,0 +1,102 @@
+@charset "utf-8";
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,figure{margin:0;padding:0;}
+body{font-family:"微软雅黑";}
+ul,ol,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:normal}
+em,i{font-style:normal;}
+b,strong{font-weight:normal;}
+a,u{text-decoration:none;}
+input{outline:none;}
+img{border:0;display:block;}
+.clear-fix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.clear-fix{zoom:1;}
+
+.top-cont,.bottom-cont{width:1195px;margin:0 auto;}
+/*!top*/
+.top{
+    height:82px;
+    border-top:1px solid #e1e1e1;
+    border-bottom:1px solid #e1e1e1;
+    .top-cont{
+        height:80px;
+        position: relative;
+        .logo{
+            display: inline-block;
+            width:145px;
+            height:55px;
+            background:url(../images/regLogo.jpg) no-repeat;
+            margin-top:16px;
+        }
+        .top-right{
+            height:18px;
+            width:293px;
+            position: absolute;
+            top:14px;right:0;
+            font-size: 12px;
+            line-height:18px;
+            color:#999999;
+            & span{
+                float: left;
+                width:168px;
+                & a:hover{
+                    color:#e60012;
+                }          
+            }
+            .help-box{
+                display: flex;
+                float: right;
+                width:86px;
+                height:12px;
+                margin-left:36px;
+                position: relative;
+                z-index: 999;
+                & a{
+                    color:#333;
+                    margin-left:5px;
+                    &:hover{
+                        color:#e60012;
+                    }
+                    z-index: 2;
+                }
+                & em{
+                  color:#cccccc;  
+                }
+                .help-ul{
+                    display: none;
+                    width:88px;
+                    position: absolute;
+                    top:-5px;right:0;
+                    height:130px;
+                    border:1px solid #ccc;
+                    & li{
+                        height:25px;
+                        border-bottom: 1px dotted #ccc;
+                        text-align: center;
+                        line-height: 24px;
+                        & a{color:#333;
+                            &:hover{
+                                color:#e60012;
+                            }
+                        }
+                        &:last-child{
+                            border:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*!bottom*/
+.bottom{
+    height:68px;
+    .bottom-cont{
+        font-size: 12px;
+        margin:20px auto 0;
+        text-align: center;
+        & a{
+            margin: 0 8px;
+            color: #333;
+        }
+    }
+}
