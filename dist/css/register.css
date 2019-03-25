@@ -1,0 +1,279 @@
+@charset "UTF-8";
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input, figure {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "微软雅黑"; }
+
+ul, ol, li {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: normal; }
+
+em, i {
+  font-style: normal; }
+
+b, strong {
+  font-weight: normal; }
+
+a, u {
+  text-decoration: none; }
+
+input {
+  outline: none; }
+
+img {
+  border: 0;
+  display: block; }
+
+.clear-fix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+.clear-fix {
+  zoom: 1; }
+
+.top-cont, .main-cont, .bottom-cont {
+  width: 1195px;
+  margin: 0 auto; }
+
+/*!top*/
+.top {
+  height: 82px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1; }
+  .top .top-cont {
+    height: 80px;
+    position: relative; }
+    .top .top-cont .logo {
+      display: inline-block;
+      width: 145px;
+      height: 55px;
+      background: url(../images/regLogo.jpg) no-repeat;
+      margin-top: 16px; }
+    .top .top-cont .top-right {
+      height: 18px;
+      width: 293px;
+      position: absolute;
+      top: 14px;
+      right: 0;
+      font-size: 12px;
+      line-height: 18px;
+      color: #999999; }
+      .top .top-cont .top-right span {
+        float: left;
+        width: 168px; }
+        .top .top-cont .top-right span a:hover {
+          color: #e60012; }
+      .top .top-cont .top-right .help-box {
+        display: flex;
+        float: right;
+        width: 86px;
+        height: 12px;
+        margin-left: 36px;
+        position: relative;
+        z-index: 999; }
+        .top .top-cont .top-right .help-box a {
+          color: #333;
+          margin-left: 5px;
+          z-index: 2; }
+          .top .top-cont .top-right .help-box a:hover {
+            color: #e60012; }
+        .top .top-cont .top-right .help-box em {
+          color: #cccccc; }
+        .top .top-cont .top-right .help-box .help-ul {
+          display: none;
+          width: 88px;
+          position: absolute;
+          top: -5px;
+          right: 0;
+          height: 130px;
+          border: 1px solid #ccc; }
+          .top .top-cont .top-right .help-box .help-ul li {
+            height: 25px;
+            border-bottom: 1px dotted #ccc;
+            text-align: center;
+            line-height: 24px; }
+            .top .top-cont .top-right .help-box .help-ul li a {
+              color: #333; }
+              .top .top-cont .top-right .help-box .help-ul li a:hover {
+                color: #e60012; }
+            .top .top-cont .top-right .help-box .help-ul li:last-child {
+              border: none; }
+
+/*!main*/
+.main {
+  height: 470px;
+  position: relative;
+  border-bottom: 1px solid #f4f4f4;
+  background: #fcfcfc;
+  padding: 30px 0 40px; }
+  .main .main-bj {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    z-index: 120;
+    width: 1200px;
+    height: 500px;
+    opacity: 0.5;
+    margin-left: -600px;
+    text-align: center;
+    background: url(../images/background-req2.png) no-repeat, url(../images/background-req1.png) no-repeat; }
+  .main .main-cont {
+    position: relative;
+    z-index: 150;
+    width: 330px; }
+    .main .main-cont h4 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 50px;
+      color: #333; }
+    .main .main-cont .form {
+      color: #333; }
+      .main .main-cont .form .form-ul li {
+        position: relative;
+        min-height: 52px;
+        margin-top: 10px;
+        margin-right: -200px; }
+        .main .main-cont .form .form-ul li .item {
+          position: relative;
+          z-index: 2;
+          width: 328px;
+          height: 50px;
+          border: 1px solid #dedede;
+          border-radius: 3px; }
+          .main .main-cont .form .form-ul li .item .input {
+            position: relative;
+            z-index: 2;
+            width: 288px;
+            height: 20px;
+            margin-top: 15px;
+            padding: 0px 20px;
+            background: 0;
+            border: 0;
+            outline: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #666; }
+          .main .main-cont .form .form-ul li .item span {
+            position: absolute;
+            left: 20px;
+            top: 0px;
+            display: inline-block;
+            height: 50px;
+            font-size: 14px;
+            line-height: 50px;
+            color: #666; }
+        .main .main-cont .form .form-ul li .phoneyzm {
+          position: relative;
+          z-index: 2;
+          width: 194px;
+          height: 50px;
+          border: 1px solid #dedede;
+          border-radius: 3px;
+          float: left; }
+          .main .main-cont .form .form-ul li .phoneyzm .input {
+            position: relative;
+            z-index: 2;
+            width: 288px;
+            height: 20px;
+            margin-top: 15px;
+            padding: 0px 20px;
+            background: 0;
+            border: 0;
+            outline: 0;
+            font-size: 14px;
+            line-height: 20px;
+            color: #666; }
+          .main .main-cont .form .form-ul li .phoneyzm span {
+            position: absolute;
+            left: 20px;
+            top: 0px;
+            display: inline-block;
+            height: 50px;
+            font-size: 14px;
+            line-height: 50px;
+            color: #666; }
+        .main .main-cont .form .form-ul li .getyzm {
+          float: left;
+          position: relative;
+          z-index: 2;
+          width: 126px;
+          height: 50px;
+          margin-left: 10px;
+          text-align: center;
+          background-color: #57565f;
+          line-height: 52px;
+          color: #fff;
+          cursor: default;
+          border-radius: 2px;
+          font-size: 14px; }
+        .main .main-cont .form .form-ul li .tishi {
+          position: absolute;
+          left: 348px;
+          top: 0;
+          font-size: 12px;
+          color: #fff;
+          display: none; }
+          .main .main-cont .form .form-ul li .tishi .false {
+            background: #c4c4c4; }
+            .main .main-cont .form .form-ul li .tishi .false i {
+              position: absolute;
+              left: -10px;
+              top: 50%;
+              overflow: hidden;
+              margin-top: -5px;
+              border-color: transparent #e4e4e4 transparent transparent;
+              border-style: dashed solid dashed dashed;
+              border-width: 5px; }
+            .main .main-cont .form .form-ul li .tishi .false p {
+              max-width: 160px;
+              line-height: 20px;
+              color: #666;
+              font-size: 12; }
+          .main .main-cont .form .form-ul li .tishi .ture {
+            display: none;
+            position: absolute;
+            top: 14px;
+            width: 23px;
+            height: 23px;
+            background: url(../images/dagou.jpg) no-repeat;
+            background-size: 100% 100%; }
+        .main .main-cont .form .form-ul li .item-word {
+          height: 35px;
+          font-size: 12px;
+          line-height: 35px;
+          color: #666;
+          text-indent: 1em; }
+          .main .main-cont .form .form-ul li .item-word a {
+            color: #06c; }
+        .main .main-cont .form .form-ul li .btn {
+          display: block;
+          width: 330px;
+          height: 52px;
+          margin-top: 6px;
+          background-color: #ff3c3c;
+          font-size: 16px;
+          line-height: 52px;
+          color: #fff;
+          text-align: center;
+          border-radius: 2px; }
+
+/*!bottom*/
+.bottom {
+  height: 68px; }
+  .bottom .bottom-cont {
+    font-size: 12px;
+    margin: 20px auto 0;
+    text-align: center; }
+    .bottom .bottom-cont a {
+      margin: 0 8px;
+      color: #333; }
