@@ -24,7 +24,7 @@ var swiper = (function () {
         },
         event() {
             var _this = this;
-            $tipsBox.on('click', 'li', function () {
+            $tipsBox.on('mouseenter', 'li', function () {
                 var index = $(this).index();
                 _this.showImage(index);
                 _this.autoPlay();
