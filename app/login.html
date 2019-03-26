@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reg&login.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
     <!-- top -->
@@ -34,7 +35,79 @@
         </div>
     </div>
     <!-- content -->
-
+    <div class="content">
+        <div class="cont-cont  clear-fix">
+            <div class="banner">
+                <a href="">
+                    <img src="images/login_pic.png" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <div class="login_pc">
+                    <div class="biaoti clear-fix">
+                        <h3>1号店用户登录</h3>
+                        <a href="register.html">注册新账号</a>
+                    </div>
+                    <div class="form">
+                        <div class="form-itme-box">
+                            <!-- 用户名 -->
+                            <div class="form-itme">
+                                <label class="user_ico">&nbsp;</label>
+                                <input type="text" id="un" class='ipt ipt_username gay_text' style="outline:none" value="" spellcheck="false" >
+                            </div>
+                            <!-- 密码 -->
+                            <div class="form-itme">
+                                <label class="paswd_ico">&nbsp;</label>
+                                <input type="password" id="pwd" oncopy='return false' onpause="return false" oncut='return false' oncontextmenu="return false" name="password" tabindex="2" class="ipt ipt_password gay_text" placeholder="密码" style="outline:none">
+                            </div>
+                            <!-- 验证码 -->
+                            <div id="vcd_div" class="verify_code clear-fix" style="display:none" >
+                                <input type="hidden" id="validateSig">
+                                <div class="form_itme cur_right">
+                                    <label class='verify_ico'>&nbsp;</label>
+                                    <input type="text" id="vcd" maxlength="4" tabindex="1" value="验证码" class="ipt ipt_code gay_text">
+                                    <span tabindex="-1" class="code_right" id="code-right"></span>
+                                    <span tabindex="-1" class="code_wrong" id="code-wrong"></span>
+                                </div>
+                            </div>
+                            <!-- 自动登入 -->
+                            <div class="auto_login clear-fix">
+                                <p class="clear-fix">
+                                    <a href="#" id="check_agreement" tabindex="3" class="uncheck_agreement">自动登入</a>
+                                    <input type="hidden" id="autologinCheck">
+                                    <span style="display:none" class="auto-tips">请勿再公共电脑上启用</span>
+                                </p>
+                                <a href="#" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
+                            </div>
+                            <!-- btn -->
+                            <button id="login_button" type='button' class="login_btn" onclick="javascript:double_submit();return false">登入</button>
+                        </div>
+                        <!-- 表单下面有请链接 -->
+                        <div class="joint_landing">
+                            <p>更多合作网站账号登入</p>
+                            <div class="clear-fix">
+                                <ul class="clear-fix account_list">
+                                    <li>
+                                        <a href="https://passport.yhd.com/qq/login.do" target="_blank" class="iconfont icon-QQ qq" title="qq"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://passport.yhd.com/jingdong/login.do" target="_blank" class="iconfont icon-jd
+                                        jingdong" title="京东"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://passport.yhd.com/wechat/login.do" target="_blank" class="iconfont icon-weixin weixin" title="微信"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://passport.yhd.com/sina/login.do" target="_blank" class="iconfont icon-weibo sina" title="新浪微博"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- bottom -->
     <div class="bottom">
             <div class="bottom-cont">

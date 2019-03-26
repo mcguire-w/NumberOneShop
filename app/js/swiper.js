@@ -1,7 +1,10 @@
 var swiper = (function () {
     let $imageBox,
     $imageBoxItem,
+<<<<<<< HEAD
     $imageWidth,
+=======
+>>>>>>> bade3e61cd27eb7da5ff61e8312ec12fa0e82fa9
     $tipsBox,
     $tipsItem,
     $el,
@@ -25,7 +28,7 @@ var swiper = (function () {
         },
         event() {
             var _this = this;
-            $tipsBox.on('click', 'li', function () {
+            $tipsBox.on('mouseenter', 'li', function () {
                 var index = $(this).index();
                 _this.showImage(index);
                 _this.autoPlay();
