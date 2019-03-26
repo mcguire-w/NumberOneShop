@@ -15,7 +15,6 @@ var needLazyLoad = (function(){
                 i = $(s).index(".qua-top");
 
                 // .children(".qua-top-slideInner")
-                console.log(i);
                 self.play(--showIndex, i);
             })
             $btnBox.on("click",".qua-top-right-btn",function(){
@@ -24,10 +23,14 @@ var needLazyLoad = (function(){
                 self.play(++showIndex, i);
             })
             $btnBox.on("click",".qua-brand-left-btn",function(){
-                $(".imgbox").css("margin-left", 0);
+                $(".imgbox").stop().animate({
+                    "margin-left": 0,
+                },500);
             })
             $btnBox.on("click",".qua-brand-right-btn",function(){
-                $(".imgbox").css("margin-left", "-1064px");
+                $(".imgbox").stop().animate({
+                    "margin-left": "-1064px",
+                },500);
             })
         },
         play(index, i){
@@ -280,5 +283,3 @@ var needLazyLoad = (function(){
         }
     }
 }())
-
-needLazyLoad.init("#needLazyLoad");

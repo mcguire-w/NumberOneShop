@@ -1,12 +1,19 @@
 
 $("header").load("public.html .header-wrap", function(){
+    memu.init(".header-wrap");
+    Search.init(".hd-header-right");
+})
+$("footer").load("public.html .ft-wrap", function(){
 
 })
 $(".banner").load("swiper.html .swiper-container", function(){
     $('.swiper-container').swiper();
-<<<<<<< HEAD
 })
-=======
+$(".like").load("needlazyload.html #needLazyLoad",function(){
+    needLazyLoad.init("#needLazyLoad");
+})
+$(".like").load("shoplist.html .mod-you-like",function(){
+    ShopList.init(".mod-you-like");
 })
 
 
@@ -27,8 +34,6 @@ var Single = (function(){
             mon = date.getMonth() + 1,
             hours = date.getHours();
             time += mon + "-" + day + " " + (hours + 2) + ":00:00";
-
-            
         },
         setTime(){
             var oDate = new Date();//获取日期对象
@@ -51,7 +56,6 @@ var Single = (function(){
             if(parseInt(second / 10) == 0){
                 second = '0' + second
             }
-
             $($time[0]).text(hour);
             $($time[1]).text(minute);
             $($time[2]).text(second);
@@ -97,4 +101,3 @@ var Single = (function(){
 }())
 
 Single.init(".single-con");
->>>>>>> wang
