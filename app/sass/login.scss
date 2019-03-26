@@ -72,6 +72,12 @@ body{
                                     color: #999;
                                 }
                             }
+                            a.check_agreement {
+                                float: left;
+                                padding-left: 18px;
+                                background: url(../images/login-icon.png) no-repeat -347px -325px;
+                                color: #999;
+                            }
                         }
                         //验证码
                         .verify_code{
@@ -168,7 +174,7 @@ body{
                     .joint_landing{
                             position: relative;
                                     z-index: 10;
-                            p{
+                            & p{
                                 padding: 15px 0;
                                 color: #666;
                                     }
@@ -200,6 +206,60 @@ body{
                             }
                             .sina{
                                 color:#dd2e37
+                            }
+                            .unfold{
+                                float: right;
+                                display: block;
+                                line-height: 34px;
+                                color: #999;
+                                & i{
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 26px;
+                                    margin-top: 4px;
+                                    margin-left: 4px;
+                                    background: url(../images/login-icon.png) no-repeat -200px 3px;
+                                    vertical-align: middle;
+                                }
+                            }
+                            .fold{
+                                & i{
+                                    background-position: -250px 3px;
+                                }
+                            }
+                            .more_landing{
+                                margin-top:15px;
+                                & li{
+                                    float: left;
+                                    width: 82px;
+                                    margin-bottom:10px;
+                                    line-height: 16px;
+                                }
+                                & a{
+                                    color:#999;
+                                    line-height: 16px;
+                                    & i{
+                                        margin-right: 4px;
+                                    }
+                                }
+                                .zfb{
+                                    color:#00b2ee
+                                }
+                                .wangyi{
+                                    color:#c4282b
+                                }
+                                .baidu{
+                                    color:#2932e1
+                                }
+                                .renren{
+                                    color:#005eac;
+                                }
+                                .pingan{
+                                    color:#ff3204
+                                }
+                                .mogujie{
+                                    color:#e84478;
+                                }
                             }
                     }
                     }

@@ -63,7 +63,7 @@
                             <div class="form-itme">
                                 <label class="user_ico">&nbsp;</label>
                                 <input type="text" id="un" class='ipt ipt_username gay_text' style="outline:none"
-                                    value="" spellcheck="false">
+                                    value="" spellcheck="false" autofocus="autofocus">
                             </div>
                             <!-- 密码 -->
                             <div class="form-itme">
@@ -90,13 +90,14 @@
                                     <input type="hidden" id="autologinCheck">
                                     <span style="display:none" class="auto-tips">请勿再公共电脑上启用</span>
                                 </p>
-                                <a href="#" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
+                                <!-- 忘记密码链接 -->
+                                <a href="" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
                             </div>
                             <!-- btn -->
                             <button id="login_button" type='button' class="login_btn"
                                 onclick="javascript:double_submit();return false">登入</button>
                         </div>
-                        <!-- 表单下面有请链接 -->
+                        <!-- 表单下面屁眼交易链接 -->
                         <div class="joint_landing">
                             <p>更多合作网站账号登入</p>
                             <div class="clear-fix">
@@ -118,7 +119,42 @@
                                             class="iconfont icon-weibo sina" title="新浪微博"></a>
                                     </li>
                                 </ul>
+                                <!-- 点击下拉按钮 -->
+                                <a href="javascript:void(0);" class="unfold" id='fold' title="展开">更多合作网站 <i></i></a>
                             </div>
+                            <!-- 更多链接 -->
+                            <ul class="more_landing clear-fix">
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/alipay/login.do" target="_blank">
+                                        <i class="iconfont zfb icon-zhifubao"></i>支付宝
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/netease/login.do" target="_blank">
+                                        <i class="iconfont wangyi icon-wangyi"></i>网易
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/baidu/login.do" target="_blank">
+                                        <i class="iconfont wangyi icon-baidu"></i>百度
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/renren/login.do" target="_blank">
+                                        <i class="iconfont renren icon-renrenwang"></i>人人网
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/wanlitong/login.do" target="_blank">
+                                        <i class="iconfont pingan icon-pingan"></i>平安万里通
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/mogujie/login.do" target="_blank">
+                                        <i class="iconfont mogujie icon-mogujie"></i>蘑菇街
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -138,7 +174,7 @@
     </div>
     <!-- 依赖jquery -->
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
-
+    <script src="js/login.js"></script>
 </body>
 
 </html>
