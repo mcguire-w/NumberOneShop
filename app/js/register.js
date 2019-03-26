@@ -13,7 +13,7 @@ var register = (function () {
             $true = $('.true');
             $false = $('.false');
             $btn = $('.btn');
-            $itme = $('.itme')
+            $itme = $('.itme');
             this.event();
         },
         event() {

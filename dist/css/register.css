@@ -1,47 +1,5 @@
-@charset "UTF-8";
-html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, input, figure {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: "微软雅黑"; }
-
-ul, ol, li {
-  list-style: none; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
-  font-size: normal; }
-
-em, i {
-  font-style: normal; }
-
-b, strong {
-  font-weight: normal; }
-
-a, u {
-  text-decoration: none; }
-
-input {
-  outline: none; }
-
-img {
-  border: 0;
-  display: block; }
-
-.clear-fix:after {
-  content: ".";
-  clear: both;
-  display: block;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden; }
-
-.clear-fix {
-  zoom: 1; }
-
 .main-cont {
-  width: 1195px;
+  width: 1200px;
   margin: 0 auto; }
 
 /*!main*/

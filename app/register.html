@@ -6,35 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/register.css">
-    <link rel="stylesheet" href="css/reg&login.css">
-    <link rel="stylesheet" href="iconfont/iconfont.css">
     <link rel="stylesheet" href="http://cdn.amazeui.org/amazeui/2.7.2/css/amazeui.css">
+    <link rel="stylesheet" href="css/reg&login.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
 </head>
+
 <body>
-    <div class="top">
+    <!-- top -->
+    <div class="top clear-fix">
         <div class="top-cont">
-            <a class="logo" href="index.html"></a>
-            <div class="top-right">
-                <span>
+            <a class="logo" href="index.html">
+                <img src="images/loginlogo.jpg" alt="">
+            </a>
+            <div class="top-right clear-fix">
+                <div class="help-wrap">
+                    <a href="http://cms.yhd.com/cms/view.do?topicId=12" class="hd_menu">
+                        <s class="help_ico"></s>
+                        帮助中心
+                    </a>
+                    <div class="hd_menu_list">
+                        <ul class="help-ul">
+                            <li><a href="">包裹跟踪</a></li>
+                            <li><a href="http://cms.yhd.com/cms/view.do?topicId=12">常见问题</a></li>
+                            <li><a href="index.html">在线退换货</a></li>
+                            <li><a href="http://cms.yhd.com/cms/view.do?topicId=43">在线投诉</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="fr">
                     您好，欢迎光临1号店！
                     <a href="#">请登录</a>
                 </span>
-                <b class="help-box">
-                    <em class="iconfont icon-bangzhu"></em>
-                    <a href="#">帮助中心</a>
-                    <em class="iconfont icon-lower-triangle"></em>
-                    <ul class="help-ul">
-                        <li></li>
-                        <li><a href="">包裹跟踪</a></li>
-                        <li><a href="">常见问题</a></li>
-                        <li><a href="">在线退换货</a></li>
-                        <li><a href="">在线投诉</a></li>
-                    </ul>
-                </b>
             </div>
         </div>
     </div>
+    <!-- main -->
     <div class="main">
         <div class="main-bj"></div>
         <div class="main-cont">
@@ -112,35 +119,39 @@
             </div>
         </div>
     </div>
-    <div class="bottom">
-        <div class="bottom-cont">
-            <a href="#">沪ICP备16050468号</a>
-            |
-            <a href="#">沪B2-20170039</a>
-            |
-            <a href="#">营业执照</a>
-            <p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
-        </div>
-    </div>
+    
+    <!-- 引入的模态框 -->
     <div id="hidden">
         <button type="button" class="am-btn am-btn-primary" data-am-modal="{target: '#my-alert'}">
             Alert
         </button>
     </div>
-        <div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
-            <div class="am-modal-dialog">
-                <div class="am-modal-hd">恭喜</div>
-                <div class="am-modal-bd">
-                    注册成功，点击跳转到登入界面
-                </div>
-                <div class="am-modal-footer">
-                    <span class="am-modal-btn">确定</span>
-                </div>
+    <!-- 模态框 -->
+    <div class="am-modal am-modal-alert" tabindex="-1" id="my-alert">
+        <div class="am-modal-dialog">
+            <div class="am-modal-hd">恭喜</div>
+            <div class="am-modal-bd">
+                注册成功，点击跳转到登入界面
+            </div>
+            <div class="am-modal-footer">
+                <span class="am-modal-btn">确定</span>
             </div>
         </div>
-    <script src="js/api.js"></script>
+    </div>
+    <!-- bottom -->
+    <div class="bottom">
+            <div class="bottom-cont">
+                <a href="#">沪ICP备16050468号</a>
+                |
+                <a href="#">沪B2-20170039</a>
+                |
+                <a href="#">营业执照</a>
+                <p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
+            </div>
+    </div>
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
     <script src="http://cdn.amazeui.org/amazeui/2.7.2/js/amazeui.js"></script>
+    <script src="js/api.js"></script>
     <script src="js/register.js"></script>
 </body>
 

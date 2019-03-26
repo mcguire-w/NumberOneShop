@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <!-- 公共头 -->
     <link rel="stylesheet" href="css/reg&login.css">
+    <!-- 图标 -->
     <link rel="stylesheet" href="iconfont/iconfont.css">
+    <!-- 内容 -->
     <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
     <!-- top -->
-    <div class="top">
+    <div class="top clear-fix">
         <div class="top-cont">
-            <a class="logo" href="index.html"></a>
-            <div class="top-right">
-                <span>
+            <a class="logo" href="index.html">
+                <img src="images/loginlogo.jpg" alt="">
+            </a>
+            <div class="top-right clear-fix">
+                <div class="help-wrap">
+                    <a href="http://cms.yhd.com/cms/view.do?topicId=12" class="hd_menu">
+                        <s class="help_ico"></s>
+                        帮助中心
+                    </a>
+                    <div class="hd_menu_list">
+                        <ul class="help-ul">
+                            <li><a href="#">包裹跟踪</a></li>
+                            <li><a href="http://cms.yhd.com/cms/view.do?topicId=12">常见问题</a></li>
+                            <li><a href="index.html">在线退换货</a></li>
+                            <li><a href="http://cms.yhd.com/cms/view.do?topicId=43">在线投诉</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="fr">
                     您好，欢迎光临1号店！
                     <a href="#">请登录</a>
                 </span>
-                    <b class="help-box">
-                        <em class="iconfont icon-bangzhu"></em>
-                        <a href="#">帮助中心</a>
-                        <em class="iconfont icon-lower-triangle"></em>
-                        <ul class="help-ul">
-                            <li></li>
-                            <li><a href="">包裹跟踪</a></li>
-                            <li><a href="">常见问题</a></li>
-                            <li><a href="">在线退换货</a></li>
-                            <li><a href="">在线投诉</a></li>
-                        </ul>
-                    </b>
             </div>
         </div>
     </div>
@@ -53,19 +62,23 @@
                             <!-- 用户名 -->
                             <div class="form-itme">
                                 <label class="user_ico">&nbsp;</label>
-                                <input type="text" id="un" class='ipt ipt_username gay_text' style="outline:none" value="" spellcheck="false" >
+                                <input type="text" id="un" class='ipt ipt_username gay_text' style="outline:none"
+                                    value="" spellcheck="false">
                             </div>
                             <!-- 密码 -->
                             <div class="form-itme">
                                 <label class="paswd_ico">&nbsp;</label>
-                                <input type="password" id="pwd" oncopy='return false' onpause="return false" oncut='return false' oncontextmenu="return false" name="password" tabindex="2" class="ipt ipt_password gay_text" placeholder="密码" style="outline:none">
+                                <input type="password" id="pwd" oncopy='return false' onpause="return false"
+                                    oncut='return false' oncontextmenu="return false" name="password" tabindex="2"
+                                    class="ipt ipt_password gay_text" placeholder="密码" style="outline:none">
                             </div>
                             <!-- 验证码 -->
-                            <div id="vcd_div" class="verify_code clear-fix" style="display:none" >
+                            <div id="vcd_div" class="verify_code clear-fix" style="display:none">
                                 <input type="hidden" id="validateSig">
                                 <div class="form_itme cur_right">
                                     <label class='verify_ico'>&nbsp;</label>
-                                    <input type="text" id="vcd" maxlength="4" tabindex="1" value="验证码" class="ipt ipt_code gay_text">
+                                    <input type="text" id="vcd" maxlength="4" tabindex="1" value="验证码"
+                                        class="ipt ipt_code gay_text">
                                     <span tabindex="-1" class="code_right" id="code-right"></span>
                                     <span tabindex="-1" class="code_wrong" id="code-wrong"></span>
                                 </div>
@@ -80,7 +93,8 @@
                                 <a href="#" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
                             </div>
                             <!-- btn -->
-                            <button id="login_button" type='button' class="login_btn" onclick="javascript:double_submit();return false">登入</button>
+                            <button id="login_button" type='button' class="login_btn"
+                                onclick="javascript:double_submit();return false">登入</button>
                         </div>
                         <!-- 表单下面有请链接 -->
                         <div class="joint_landing">
@@ -88,17 +102,20 @@
                             <div class="clear-fix">
                                 <ul class="clear-fix account_list">
                                     <li>
-                                        <a href="https://passport.yhd.com/qq/login.do" target="_blank" class="iconfont icon-QQ qq" title="qq"></a>
+                                        <a href="https://passport.yhd.com/qq/login.do" target="_blank"
+                                            class="iconfont icon-QQ qq" title="qq"></a>
                                     </li>
                                     <li>
                                         <a href="https://passport.yhd.com/jingdong/login.do" target="_blank" class="iconfont icon-jd
                                         jingdong" title="京东"></a>
                                     </li>
                                     <li>
-                                        <a href="https://passport.yhd.com/wechat/login.do" target="_blank" class="iconfont icon-weixin weixin" title="微信"></a>
+                                        <a href="https://passport.yhd.com/wechat/login.do" target="_blank"
+                                            class="iconfont icon-weixin weixin" title="微信"></a>
                                     </li>
                                     <li>
-                                        <a href="https://passport.yhd.com/sina/login.do" target="_blank" class="iconfont icon-weibo sina" title="新浪微博"></a>
+                                        <a href="https://passport.yhd.com/sina/login.do" target="_blank"
+                                            class="iconfont icon-weibo sina" title="新浪微博"></a>
                                     </li>
                                 </ul>
                             </div>
@@ -110,16 +127,18 @@
     </div>
     <!-- bottom -->
     <div class="bottom">
-            <div class="bottom-cont">
-                <a href="#">沪ICP备16050468号</a>
-                |
-                <a href="#">沪B2-20170039</a>
-                |
-                <a href="#">营业执照</a>
-                <p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
-            </div>
+        <div class="bottom-cont">
+            <a href="#">沪ICP备16050468号</a>
+            |
+            <a href="#">沪B2-20170039</a>
+            |
+            <a href="#">营业执照</a>
+            <p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
+        </div>
     </div>
+    <!-- 依赖jquery -->
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
-    
+
 </body>
+
 </html>
