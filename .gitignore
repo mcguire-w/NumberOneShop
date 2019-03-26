@@ -1,14 +1,5 @@
-<<<<<<< HEAD
 node_modules/
 package-lock.json
-=======
 dist/
-node_modules/
-package-lock.json
-<<<<<<< HEAD
-.vscode/
-=======
 .vscode/
 http/
->>>>>>> wang
->>>>>>> c2969ba2884f7025804222895e5a9c1eb9d994cb
