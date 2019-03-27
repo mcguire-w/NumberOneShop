@@ -95,12 +95,10 @@ var login = (function () {
                     this.overtime()
                     $('#error_tips').css('display','none')
                     data = data.data;
-                    console.log(data)
-                    console.log(this)
-                    debugger
+            
                     this.setcookie('username',data.username,$autotime)
                     this.setcookie('id',data.id,$autotime)
-                    // debugger
+    
                     document.location.href = 'index.html';
                 }
             })
