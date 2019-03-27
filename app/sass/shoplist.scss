@@ -1,0 +1,340 @@
+@import "common.css";
+
+.mod-you-like{
+    position: relative;
+    margin-top: 0px !important;
+    .under-log{
+        width: 100%;
+        height: 131px;
+        position: relative;
+        img{
+            width: 390px;
+            height: 65px;
+            left: 50%;
+            margin-left: -195px;
+            top: 27px;
+            position: absolute;
+        }
+        .u-log-font{
+            width: 155px;
+            height: 22px;
+            font-family: PingFangSC-Regular;
+            font-size: 16px;
+            color: #999;
+            letter-spacing: 1px;
+            text-align: center;
+            position: absolute;
+            top: 87px;
+            left: 460px;
+        }
+    }
+    .you-like-list{
+        .under-sp-list{
+            margin-right: -18px;
+            .under-list-single{
+                width: 168px;
+                height: 236px;
+                position: relative;
+                background-color: #fff;
+                float: left;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                position: relative;
+                cursor: pointer;
+                .under-pro-pic{
+                    width: 150px;
+                    height: 150px;
+                    background-color: #f8f8f8;
+                    margin-left: 10px;
+                    margin-top: 10px;
+                    img{
+                        width: 150px;
+                        height: 150px;
+                    }
+                }
+                .sp-text{
+                    opacity: 1;
+                }
+                .single-tit{
+                    word-break: break-all;
+                    width: 150px;
+                    height: 38px;
+                    overflow: hidden;
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    font-size: 14px;
+                    color: #333;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    transition: all .3s ease;
+                    line-height: 20px;
+                    span{
+                        width: 28px;
+                        height: 14px;
+                        background: #fef0ef;
+                        border: 1px solid #fba8b2;
+                        font-size: 12px;
+                        color: #ff4040;
+                        text-align: center;
+                        line-height: 14px;
+                        display: inline-block;
+                        margin-right: 6px;
+                    }
+                }
+                .text-limit-limp {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    word-break: break-all;
+                }
+                .single-money{
+                    display: block;
+                    margin-left: 8px;
+                    font-size: 14px;
+                    color: #ff4040;
+                    font-weight: bold;
+                    margin-top: 8px;
+                    float: left;
+                    -webkit-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    transition: all .3s ease;
+                    font-family: Tahoma,"Microsoft YaHei";
+                    span{
+                        font-family: Tahoma;
+                        font-size: 14px;
+                        margin-left: -3px;
+                    }
+                }
+                .pro-tag{
+                    float: right;
+                    margin-top: 4px;
+                    margin-right: 10px;
+                    -webkit-transition: -webkit-transform .3s ease;
+                    transition: -webkit-transform .3s ease;
+                    -o-transition: -o-transform .3s ease;
+                    -moz-transition: transform .3s ease,-moz-transform .3s ease;
+                    transition: transform .3s ease;
+                    transition: transform .3s ease,-webkit-transform .3s ease,-moz-transform .3s ease,-o-transform .3s ease;
+                    -webkit-transition: transform .3s ease;
+                    -moz-transition: transform .3s ease;
+                    -o-transition: transform .3s ease;
+                    .goods-icon{
+                        width: 30px;
+                        height: 16px;
+                        line-height: 16px;
+                        font-size: 12px;
+                        text-align: center;
+                        margin-left: 2px;
+                        float: left;
+                        margin-top: 5px;
+                        background-color: #fff3fa;
+                        color: #ff62a1;
+                        border: 1px solid #ffcce0;
+                        margin-left: 5px;
+                    }
+                }
+                .sing-btn-con{
+                    opacity: 0;
+                    filter: Alpha(opacity=0);
+                    width: 170px;
+                    height: 74px;
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 805;
+                    -webkit-transition: all .5s ease;
+                    -o-transition: all .5s ease;
+                    -moz-transition: all .5s ease;
+                    transition: all .5s ease;
+                    .sin-hover-btn{
+                        width: 48px;
+                        height: 48px;
+                        -moz-border-radius: 24px;
+                        border-radius: 24px;
+                        text-align: center;
+                        line-height: 48px;
+                    }
+                    .sin-gw{
+                        background: #ff4040;
+                        position: absolute;
+                        left: 30px;
+                        bottom: 15px;
+                        text-align: left;
+                        text-indent: 14px;
+                        .sin-hover-btn-a{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            overflow: hidden;
+                            i{
+                                font-size: 24px;
+                                line-height: 49px;
+                                color:#ffcdcd;
+                                &:hover{
+                                   color: #fff;
+                                }
+                            }
+                        }
+                       
+                    }
+                    .sin-xs{
+                        background-color: #fff0f0;
+                        border: 1px solid #ffcdcd;
+                        font-size: 12px;
+                        color: #ff4040;
+                        left: 92px;
+                        bottom: 15px;
+                        position: absolute;
+                        -webkit-box-sizing: border-box;
+                        -moz-box-sizing: border-box;
+                        box-sizing: border-box;
+                        &:hover{background: #ffe9e9;}
+                    }
+                }
+                .border-line{
+                    width: 168px;
+                    height: 236px;
+                    position: absolute;
+                    outline: 1px solid transparent;
+                    -webkit-transition: outline-color .5s;
+                    -o-transition: outline-color .5s;
+                    -moz-transition: outline-color .5s;
+                    transition: outline-color .5s;
+                    z-index: 800;
+                    top: 0px;
+                    left: 0px;
+                    display: inline-block;
+                    &:hover{
+                       outline-color: #ff4040 !important;
+                    }
+                }
+                &:hover .sp-text{
+                    opacity: 0.1;
+                }
+                &:hover .sing-btn-con{
+                    opacity: 1;
+                }
+            }
+            .under-list-pinpai{
+                width: 350px;
+                height: 238px;
+                float: left;
+                margin-right: 10px;
+                position: relative;
+                background-color: #fff;
+                .under-pinpai-font{
+                    font-size: 14px;
+                    color: #666;
+                    width: 100%;
+                    height: 42px;
+                    font-weight: bold;
+                    text-align: center;
+                    position: relative;
+                    .under-pinpai-font-lLine{
+                        left: 133px;
+                    }
+                    .under-pinpai-font-rLine{
+                        right: 133px;
+                    }
+                    .jxpp{
+                        width: 64px;
+                        height: 20px;
+                        top: 20px;
+                        left: 144px;
+                        background: 0;
+                        letter-spacing: 1px
+                    }
+                    span{
+                        background: #666;
+                        width: 8px;
+                        height: 2px;
+                        position: absolute;
+                        top: 29px;
+                    }
+                }
+                .under-list-pinpai-imgCon{
+                    width: 174px;
+                    height: 90px;
+                    float: left;
+                    position: relative;
+                    line-height: 90px;
+                    cursor: pointer;
+                    text-align: center;
+                    font-size: 0px;
+                    &:nth-child(2n+1){
+                        margin-right: 2px;
+                    }
+                    .under-list-pinpai-hover-img{
+                        -webkit-transition: opacity 1.5s ease;
+                        -o-transition: opacity 1.5s ease;
+                        -moz-transition: opacity 1.5s ease;
+                        transition: opacity 1.5s ease;
+                        display: inline-block;
+                        vertical-align: middle;
+                        visibility: hidden;
+                    }
+                    .img-w{
+                        width: 100px;
+                        visibility: visible;
+                    }
+                    .under-list-pinpai-hover{
+                        width: 100%;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                        background-color: #fff;
+                        opacity: 0;
+                        filter: Alpha(opacity=0);
+                        height: 0;
+                        z-index: -1;
+                        -webkit-transition: opacity 1.5s ease;
+                        -o-transition: opacity 1.5s ease;
+                        -moz-transition: opacity 1.5s ease;
+                        transition: opacity 1.5s ease;
+                        p{
+                            width: 100%;
+                            text-align: center;
+                            font-size: 14px;
+                            height: 20px;
+                            color: #333;
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -7px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+                .under-list-xt{
+                    display: block;
+                    position: absolute;
+                    background-color: #f6f6f6;
+                }
+                .under-list-hx{
+                    width: 280px;
+                    height: 1px;
+                    left: 35px;
+                    top: 132px;
+                    z-index: 101;
+                }
+                .under-list-sx{
+                    width: 1px;
+                    height: 120px;
+                    left: 175px;
+                    top: 75px;
+                    z-index: 101;
+                }
+            }
+        }
+        .global_loading{
+            display: none;
+            position: relative;
+            left: 0;
+            bottom: 15px;
+            _bottom: 370px;
+            width: 100%;
+            height: 80px;
+            background: #f5f5f5 url(https://img.yihaodianimg.com/front-homepage/index/images/loading-yhdUpdate_01.gif?7860b29) no-repeat center center;
+        }
+    }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 公共头 -->
+    <link rel="stylesheet" href="css/reg&login.css">
+    <!-- 图标 -->
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <!-- 内容 -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div class="top clear-fix">
+        <div class="top-cont">
+            <a class="logo" href="index.html">
+                <img src="images/loginlogo.jpg" alt="">
+            </a>
+            <div class="top-right clear-fix">
+                <div class="help-wrap">
+                    <a href="http://cms.yhd.com/cms/view.do?topicId=12" class="hd_menu">
+                        <s class="help_ico"></s>
+                        帮助中心
+                    </a>
+                    <div class="hd_menu_list">
+                        <ul class="help-ul">
+                            <li><a href="#">包裹跟踪</a></li>
+                            <li><a href="http://cms.yhd.com/cms/view.do?topicId=12">常见问题</a></li>
+                            <li><a href="index.html">在线退换货</a></li>
+                            <li><a href="http://cms.yhd.com/cms/view.do?topicId=43">在线投诉</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <span class="fr">
+                    您好，欢迎光临1号店！
+                    <a href="login.html">请登录</a>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="cont-cont  clear-fix">
+            <!-- banner图 -->
+            <div class="banner">
+                <a href="javascript:void(0)">
+                    <img src="images/login_pic.png" alt="">
+                </a>
+            </div>
+            <!-- 右边内容 -->
+            <div class="right">
+                <!-- pc登入 -->
+                <div class="login_pc">
+                    <p id="error_tips" class="error_tips" style="display: none;">账号和密码不匹配，请重新输入</p>
+                    <div class="biaoti clear-fix">
+                        <h3>1号店用户登录</h3>
+                        <a href="register.html">注册新账号</a>
+                    </div>
+                    <div class="form">
+                        <div class="form-itme-box">
+                            <!-- 用户名 -->
+                            <div class="form-itme">
+                                <label class="user_ico">&nbsp;</label>
+                                <input type="text" id="un" class='ipt ipt_username gay_text' style="outline:none"
+                                    value="" spellcheck="false" autofocus="autofocus">
+                            </div>
+                            <!-- 密码 -->
+                            <div class="form-itme">
+                                <label class="paswd_ico">&nbsp;</label>
+                                <input type="password" id="pwd" oncopy='return false' onpause="return false"
+                                    oncut='return false' oncontextmenu="return false" name="password" tabindex="2"
+                                    class="ipt ipt_password gay_text" placeholder="密码" style="outline:none">
+                            </div>
+                            <!-- 验证码 -->
+                            <div id="vcd_div" class="verify_code clear-fix" style="display:none">
+                                <input type="hidden" id="validateSig">
+                                <div class="form_itme cur_right">
+                                    <label class='verify_ico'>&nbsp;</label>
+                                    <input type="text" id="vcd" maxlength="4" tabindex="1" value="验证码"
+                                        class="ipt ipt_code gay_text">
+                                    <span tabindex="-1" class="code_right" id="code-right"></span>
+                                    <span tabindex="-1" class="code_wrong" id="code-wrong"></span>
+                                </div>
+                            </div>
+                            <!-- 自动登入 -->
+                            <div class="auto_login clear-fix">
+                                <p class="clear-fix">
+                                    <a href="javascript:void(0)" id="check_agreement" tabindex="3" class="uncheck_agreement">自动登入</a>
+                                    <input type="hidden" id="autologinCheck">
+                                    <span style="display:none" class="auto-tips">请勿再公共电脑上启用</span>
+                                </p>
+                                <!-- 忘记密码链接 -->
+                                <a href="password_back.html" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
+                            </div>
+                            <!-- btn -->
+                            <button id="login_button" type='button' class="login_btn">登入</button>
+                        </div>
+                        <!-- 表单下面屁眼交易链接 -->
+                        <div class="joint_landing">
+                            <p>更多合作网站账号登入</p>
+                            <div class="clear-fix">
+                                <ul class="clear-fix account_list">
+                                    <li>
+                                        <a href="https://passport.yhd.com/qq/login.do" target="_blank"
+                                            class="iconfont icon-QQ qq" title="qq"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://passport.yhd.com/jingdong/login.do" target="_blank" class="iconfont icon-jd
+                                        jingdong" title="京东"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://passport.yhd.com/wechat/login.do" target="_blank"
+                                            class="iconfont icon-weixin weixin" title="微信"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://passport.yhd.com/sina/login.do" target="_blank"
+                                            class="iconfont icon-weibo sina" title="新浪微博"></a>
+                                    </li>
+                                </ul>
+                                <!-- 点击下拉按钮 -->
+                                <a href="javascript:void(0);" class="unfold" id='fold' title="展开">更多合作网站 <i></i></a>
+                            </div>
+                            <!-- 更多链接 -->
+                            <ul class="more_landing clear-fix">
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/alipay/login.do" target="_blank">
+                                        <i class="iconfont zfb icon-zhifubao"></i>支付宝
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/netease/login.do" target="_blank">
+                                        <i class="iconfont wangyi icon-wangyi"></i>网易
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/baidu/login.do" target="_blank">
+                                        <i class="iconfont wangyi icon-baidu"></i>百度
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/renren/login.do" target="_blank">
+                                        <i class="iconfont renren icon-renrenwang"></i>人人网
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/wanlitong/login.do" target="_blank">
+                                        <i class="iconfont pingan icon-pingan"></i>平安万里通
+                                    </a>
+                                </li>
+                                <li style="display:none">
+                                    <a href="https://passport.yhd.com/mogujie/login.do" target="_blank">
+                                        <i class="iconfont mogujie icon-mogujie"></i>蘑菇街
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 二维码登入 -->
+                <div class="login_code">
+                    <!-- 标题 -->
+                    <div class="login_code_title">
+                        用<a href="#">1号店APP</a>登录
+                    </div>
+                    <!-- 二维码 -->
+                    <div class="login_code_pic">
+                        <!-- 正常显示二维码 -->
+                        <div class="picture_code" id="login_code_pic" style="display:block">
+                            <img src="" alt="">
+                        </div>
+                        <div class="shade" style="display:none"></div>
+                        <!-- 过期时展示，点击按钮切换 -->
+                        <div class="meg_error" style="display:none">
+                            <h5>二维码已经过期</h5>
+                            <a href="javascript:void(0)" class="refresh_btn">请刷新二维码</a>
+                        </div>
+                    </div>
+                    <!-- 预留扫描成功 -->
+                    <div class="login_code_success"></div>
+                    <!-- 刷新二维码 -->
+                    <div class="login_code_handle">
+                        <a href="javascript:void(0)">刷新二维码</a>
+                    </div>
+                </div>
+                <!-- 右下角切换 -->
+                <div class="login_switch">
+                    <em></em>
+                    <p href="javascript:;" class="two_dimension_code"></p>
+                    <p href="javascript:;" class="static_pc"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bottom -->
+    <div class="bottom">
+        <div class="bottom-cont">
+            <a href="#">沪ICP备16050468号</a>
+            |
+            <a href="#">沪B2-20170039</a>
+            |
+            <a href="#">营业执照</a>
+            <p>Copyright © 1号店网上超市 2007-2018，All Rights Reserved</p>
+        </div>
+    </div>
+    <!-- 依赖jquery -->
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

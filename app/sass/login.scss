@@ -1,0 +1,410 @@
+
+// content
+body{
+    background:#fcfcfc;
+}
+.content{
+    padding: 26px 0 0;
+    font-size: 12px;
+    color:#333;
+    background:url(../images/login-bj.png) repeat-x;
+    .cont-cont{
+        width:980px;
+        margin:0 auto;
+        .right{
+            position: relative;
+           // _display: inline;
+            float: right;
+            width: 330px;
+            padding: 45px 35px 0 35px;
+            background-color: #fff;
+            .login_pc{
+                .error_tips {
+                    position: absolute;
+                    top: 9px;
+                    left: 35px;
+                    width: 282px;
+                    height: 30px;
+                    overflow: hidden;
+                    padding: 0 10px 0 36px;
+                    border: 1px solid #e5debc;
+                    border-radius: 2px;
+                    background: #fff7d1 url(../images/login-icon.png) no-repeat -324px -150px;
+                    line-height: 30px;
+                    color: #999;
+                }
+                .biaoti{
+                    h3{
+                        float: left;
+                        font-size: 14px;
+                        color: #666;
+                        font-weight: bold;
+                        line-height: 30px;
+                    }
+                    a{
+                        float: right;
+                        line-height: 30px;
+                        color: #06c;
+                    }
+                }
+                .form{
+                    position: relative;
+                    padding: 0 0 18px;
+                    .form-itme-box{
+                        width: 330px;
+                        margin: 0 auto;
+                        //选取文本框后 边框;给itme加
+                        .cur{
+                            z-index: 101;
+                            border: 1px solid #aaa;
+                        }
+                        // 自动登入
+                        .auto_login{
+                            position: relative;
+                            margin: 10px 0;
+                            line-height: 24px;
+                            min-height: 24px;
+                            .forget_pswd{
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                color: #999;
+                            }
+                            .auto-tips{
+                                float: left;
+                                margin-left: 7px;
+                              //  _display: inline;
+                                color: red;
+                            }
+                            a.uncheck_agreement{
+                                float: left;
+                                padding-left: 18px;
+                                background: url(../images/login-icon.png) no-repeat -347px -265px;
+                                color: #999;
+                                &:hover{
+                                    background-position: -347px -295px;
+                                    color: #999;
+                                }
+                            }
+                            a.check_agreement {
+                                float: left;
+                                padding-left: 18px;
+                                background: url(../images/login-icon.png) no-repeat -347px -325px;
+                                color: #999;
+                            }
+                        }
+                        //验证码
+                        .verify_code{
+                            height: 52px;
+                            margin-bottom: 10px;
+                            padding: 0;
+                            border: 0 none;
+                            .form-itme{
+                                float: left;
+                                margin-bottom: 0;
+                                padding: 14px 33px 14px 18px;
+                            }
+                            .code_right{
+                                position: absolute;
+                                top: 1px;
+                                right: 0;
+                                width: 30px;
+                                height: 50px;
+                                background: #FFF url(https://passport.yhd.com/front-passport/passport/images/regist.png?f74809e) no-repeat 0 -27px;
+                                
+                            }
+                            .code_wrong{
+                                display: none;
+                                position: absolute;
+                                top: 2px;
+                                right: 0;
+                                width: 30px;
+                                height: 48px;
+                                background: #FFF url(https://passport.yhd.com/front-passport/passport/images/regist.png?f74809e) no-repeat 0 -80px;
+                            }
+                        }
+                        //按钮
+                        .login_btn{
+                            width: 330px;
+                            height: 52px;
+                            border: 0 none;
+                            border-radius: 3px;
+                            background: #ff3c3c;
+                            font-size: 16px;
+                            color: #FFF;
+                            cursor: pointer;
+                            text-shadow: 1px 1px 1px #ff7373;
+                            font-family: "Microsoft YaHei";
+                            line-height: 52px;
+                        }
+                        //form框
+                        .form-itme{
+                            position: relative;
+                            z-index: 100;
+                            height: 24px;
+                            margin-bottom: 10px;
+                            padding: 14px 18px;
+                            border: 1px solid #dedede;
+                            background: #FFF;
+                            line-height: 24px;
+                            //用户名图标
+                            .user_ico{
+                                background: url(../images/login-icon.png) no-repeat -50px 4px;
+                            }
+                            //文本框 内容
+                            .gay_text{
+                                color: #ccc;
+                            }
+                            //验证码图标
+                            .verify_code{
+                                background: url(../images/login-icon.png) no-repeat -100px 4px
+                            }
+                            //input文本框
+                            .ipt{
+                                width: 230px;
+                                height: 24px;
+                                padding-left: 3px;
+                                border: 0 none;
+                                line-height: 24px;
+                                vertical-align: middle;
+                                font-family: "Microsoft YaHei";
+                                font-size: 14px;
+                            }
+                            //密码图标
+                            .paswd_ico{
+                                background: url(../images/login-icon.png) no-repeat -150px 4px;
+                            }
+                            //文本框提示
+                            label{
+                                display: inline-block;
+                                width: 42px;
+                                vertical-align: middle;
+                                color: #666;
+                                cursor: default;
+                            }
+                            }
+                            
+                        }
+                    .joint_landing{
+                            position: relative;
+                                    z-index: 10;
+                            & p{
+                                padding: 15px 0;
+                                color: #666;
+                                    }
+                            .account_list{
+                                 float:left;
+                                 width:230px;
+                                li{
+                                    float: left;
+                                    margin-right: 20px;
+                                }
+                                 a.iconfont{
+                                    display: inline-block;
+                                    width: 32px;
+                                    height: 35px;
+                                    font-size: 32px;
+                                    line-height: 35px;
+                                }
+                            }
+                            .qq{
+                                color:#10a8ff;
+                            }
+                            .jingdong{
+                                position: relative;
+                                top: 2px;
+                                color: #c81825;
+                            }
+                            .weixin{
+                                color:#0c0
+                            }
+                            .sina{
+                                color:#dd2e37
+                            }
+                            .unfold{
+                                float: right;
+                                display: block;
+                                line-height: 34px;
+                                color: #999;
+                                & i{
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 26px;
+                                    margin-top: 4px;
+                                    margin-left: 4px;
+                                    background: url(../images/login-icon.png) no-repeat -200px 3px;
+                                    vertical-align: middle;
+                                }
+                            }
+                            .fold{
+                                & i{
+                                    background-position: -250px 3px;
+                                }
+                            }
+                            .more_landing{
+                                margin-top:15px;
+                                & li{
+                                    float: left;
+                                    width: 82px;
+                                    margin-bottom:10px;
+                                    line-height: 16px;
+                                }
+                                & a{
+                                    color:#999;
+                                    line-height: 16px;
+                                    & i{
+                                        margin-right: 4px;
+                                    }
+                                }
+                                .zfb{
+                                    color:#00b2ee
+                                }
+                                .wangyi{
+                                    color:#c4282b
+                                }
+                                .baidu{
+                                    color:#2932e1
+                                }
+                                .renren{
+                                    color:#005eac;
+                                }
+                                .pingan{
+                                    color:#ff3204
+                                }
+                                .mogujie{
+                                    color:#e84478;
+                                }
+                            }
+                    }
+                    }
+                }
+             .login_switch{
+                position: absolute;
+                right: 0;
+                bottom: -3px;
+                em{
+                    display: inline-block;
+                    position: absolute;
+                    right: 18px;
+                    bottom: 19px;
+                    width: 0;
+                    height: 0;
+                    overflow: hidden;
+                    border: 43px solid transparent;
+                    border-right-color: #fff;
+                    transform: rotate(46deg);
+                }
+                & p{
+                    width: 62px;
+                    height: 62px;
+                    cursor: pointer;
+                    text-decoration: none;
+                    color: #333;
+                }
+                .two_dimension_code{
+                    display: block;
+                    background: url(../images/login_erweima.png) no-repeat -88px 0;
+                    &:hover{
+                        background: url(../images/login_erweima.png) no-repeat -88px -88px;
+                    }
+                }
+                .static_pc{
+                    display: none;
+                    background: url(../images/login_erweima.png) no-repeat 0 0;
+                    &:hover{
+                        background: url(../images/login_erweima.png) no-repeat 0 -88px;
+                    }
+                }
+             }
+             .login_code{
+                display: none;
+                .login_code_title {
+                    color: #666;
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 16px;
+                    text-align: center;
+                    & a{
+                        display: inline-block;
+                        color: #ff3c3c;
+                    }
+                }
+                .login_code_pic {
+                    position: relative;
+                    width: 180px;
+                    height: 180px;
+                    margin: 20px auto 0;
+                    border: 1px solid #dedede;
+                    .picture_code {
+                        width: 180px;
+                        height: 180px;
+                        & img{
+                            border: 0 none;
+                            vertical-align: top;
+                        }
+                    }
+                    .shade {
+                        background-color: #fff;
+                        opacity: .8;
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 180px;
+                        height: 180px;
+                        text-align: center;
+                    }
+                    .meg_error {
+                        display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 180px;
+                        height: 180px;
+                        text-align: center;
+                        & h5 {
+                            margin: 0;
+                            padding: 58px 0 15px;
+                            font-weight: normal;
+                        }
+                        .refresh_btn {
+                            display: inline-block;
+                            width: 110px;
+                            height: 35px;
+                            background-color: #ff3c3c;
+                            border-radius: 4px;
+                            color: #fff;
+                            text-align: center;
+                            line-height: 35px;
+                        }
+                    }
+                }
+                .login_code_success {
+                    display: none;
+                }
+                .login_code_handle {
+                    padding: 20px 0 90px;
+                    color: #666;
+                    text-align: center;
+                    & a{
+                        display: inline-block;
+                        color: #666;
+                    }
+                }
+             }   
+        }
+        .banner{
+                margin-top: 45px;
+                width: 510px;
+                height: 315px;
+                float: left;
+                & img{
+                    width: 510px;
+                    height: 315px;
+                    vertical-align: top;
+            }
+        }
+    }
+}
+    
+
