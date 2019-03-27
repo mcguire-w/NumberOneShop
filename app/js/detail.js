@@ -1,3 +1,8 @@
+$(".header").load("public.html .header-wrap",function(){
+	memu.init(".header-wrap");
+    Search.init(".hd-header-right");
+})
+$(".footer").load("public.html .ft-wrap",function(){})
 $(function(){
 	//开关商品分类
 	$("#sp").mouseover(function(){
@@ -177,52 +182,50 @@ $(function(){
 		$(this).css("background","url(images/xjt_x.jpg)no-repeat 98px 12px");
 	})
 	
-	//价格方式
-	$(".jg").mouseover(function(){
-		$(this).next().show();
-	})
-	$(".peisong1 ul").mouseout(function(){
-		$(this).hide();
-	})
-	
-	//配送地
-	$("#psd").mouseover(function(){
-//		alert(1)
-		$(".peisongdizhi").toggle();
-		$(".peisongdizhi").display="block";
-		$(this).css("background","none");
-	})
-	$("#psd").mouseout(function(){
-		$(".peisongdizhi").display="none";
-		$(this).css("background","url(images/xj.jpg)no-repeat 89px 38px");
-	})
-	
-	//	        地址
-	        $(".dizhi>.dizhiul>a").click(function(){
-	        	$(this).css("background-color","#FFFFFF");
-	        	$(this).css("border-bottom","none");
-	        	$(this).siblings().css("background-color","#F8F8F8");
-	        	$(this).siblings().css("border-bottom","1px solid #DDDDDD");
-	        })
-	        
-//	        详细地址--上海
-	        $(".shxx a").click(function(){
-	        	$(this).css({"background":"#FF966E","color":"#FFFFFF"});
-	        	$(this).siblings("a").css({"background":"#FFFFFF","color":"#000000"});
-	        })
-//	        静安区
-			$(".jinganqu a").click(function(){
-	        	$(this).css({"background":"#FF966E","color":"#FFFFFF"});
-	        	$(this).siblings("a").css({"background":"#FFFFFF","color":"#000000"});
-	        })
-			$(".shdk").click(function(){
-				$(".peisongdizhi").show();
-			})
-			$(".guanbi").click(function(){
-					$(".peisongdizhi").hide();
-			})
-			
-	
+		//价格方式
+		$(".jg").mouseover(function(){
+			$(this).next().show();
+		})
+		$(".peisong1 ul").mouseout(function(){
+			$(this).hide();
+		})
+		
+		//配送地
+		$("#psd").mouseover(function(){
+	//		alert(1)
+			$(".peisongdizhi").toggle();
+			$(".peisongdizhi").display="block";
+			$(this).css("background","none");
+		})
+		$("#psd").mouseout(function(){
+			$(".peisongdizhi").display="none";
+			$(this).css("background","url(images/xj.jpg)no-repeat 89px 38px");
+		})
+		
+		//	        地址
+				$(".dizhi>.dizhiul>a").click(function(){
+					$(this).css("background-color","#FFFFFF");
+					$(this).css("border-bottom","none");
+					$(this).siblings().css("background-color","#F8F8F8");
+					$(this).siblings().css("border-bottom","1px solid #DDDDDD");
+				})
+				
+	//	        详细地址--上海
+				$(".shxx a").click(function(){
+					$(this).css({"background":"#FF966E","color":"#FFFFFF"});
+					$(this).siblings("a").css({"background":"#FFFFFF","color":"#000000"});
+				})
+	//	        静安区
+				$(".jinganqu a").click(function(){
+					$(this).css({"background":"#FF966E","color":"#FFFFFF"});
+					$(this).siblings("a").css({"background":"#FFFFFF","color":"#000000"});
+				})
+				$(".shdk").click(function(){
+					$(".peisongdizhi").show();
+				})
+				$(".guanbi").click(function(){
+						$(".peisongdizhi").hide();
+				})
 	//购物车
 	$(".gouwuche").mouseover(function(){
 //		alert(1)
