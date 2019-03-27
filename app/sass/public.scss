@@ -83,7 +83,7 @@ $backgroundColor:#f4f4f4;
                         .login-out{
                             font-size: 12px;
                             color: #aaa;
-                            display: none;
+                            display: block;
                             float: left;
                             margin: 6px 5px 0px 5px;
                             height: 18px;
@@ -387,7 +387,7 @@ $backgroundColor:#f4f4f4;
                         z-index: 1001;
                         .column-item{
                             display: inline-block;
-                            float: left;
+                            float:left;
                             width: 155px;
                             padding-left: 22px;
                             margin: 30px 0;

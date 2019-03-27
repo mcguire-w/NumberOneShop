@@ -59,10 +59,10 @@ var login = (function () {
         },
         //设置自动登入时cookie过期时间为7天
         overtime() {
-            if ($agreement == 1) {
-                $autotime = (60 * 60 * 24 * 7);
+            if ($agreement === 1) {
+                $autotime = 7;
             } else {
-                $autotime = -1;
+                $autotime = 0;
             }
         },
         //刷新二维码
@@ -80,26 +80,36 @@ var login = (function () {
         },
         //登录
         query() {
-            let name = $('#un').val();
+            let name = $('#un').val();  
             let password = $('#pwd').val();
             $.get(obj.login_query, {
                 user: name,
                 password: password
-            }, function (data) {
+            }, (data) => {
                 data = JSON.parse(data);
-                console.log(data)
                 //不存在
                 if (data.code == 0) {
                     $('#error_tips').css('display','block')
                 } else if (data.code == 200) {
                     //存在     
+                    this.overtime()
                     $('#error_tips').css('display','none')
                     data = data.data;
-                    document.cookie = username + '=' + data.username + ';path= /;' +'max-age=' + $autotime ;    
-                    document.cookie = id + '=' + data.id + ';path= /;' + 'max-age=' + $autotime;
-                    document.location.href = obj.index;
+            
+                    this.setcookie('username',data.username,$autotime)
+                    this.setcookie('id',data.id,$autotime)
+    
+                    document.location.href = 'index.html';
                 }
             })
+        },
+        setcookie(key, value, day) {
+            // 添加/修改cookie
+            var str =  `${key}=${value}; path=/; `;
+            if(day) {
+                str += `max-age=${day*24*3600};`
+            }
+            document.cookie = str;
         }
     }
 }())
