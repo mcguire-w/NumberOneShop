@@ -8,15 +8,12 @@ $("footer").load("public.html .ft-wrap", function(){
 })
 $(".banner").load("swiper.html .swiper-container", function(){
     $('.swiper-container').swiper();
-<<<<<<< HEAD
-=======
 })
 $(".like").load("needlazyload.html #needLazyLoad",function(){
     needLazyLoad.init("#needLazyLoad");
 })
 $(".like").load("shoplist.html .mod-you-like",function(){
     ShopList.init(".mod-you-like");
->>>>>>> d4dfb51f2a1a22ee5b860240fa57221c58f3f65f
 })
 
 

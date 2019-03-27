@@ -28,4 +28,4 @@ a:hover{
 }
 .clearfix::after{content: "";display: block;clear:both;overflow: hidden;visibility: hidden;}
 .clearfix{zoom:1;}
-.wrap{width: 1070px;margin: 0 auto;height: 100%;}
+.wrap{width: 1070px !important;margin: 0 auto;height: 100%;}
