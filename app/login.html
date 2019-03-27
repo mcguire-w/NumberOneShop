@@ -38,7 +38,7 @@
                 </div>
                 <span class="fr">
                     您好，欢迎光临1号店！
-                    <a href="#">请登录</a>
+                    <a href="login.html">请登录</a>
                 </span>
             </div>
         </div>
@@ -46,12 +46,15 @@
     <!-- content -->
     <div class="content">
         <div class="cont-cont  clear-fix">
+            <!-- banner图 -->
             <div class="banner">
-                <a href="">
+                <a href="javascript:void(0)">
                     <img src="images/login_pic.png" alt="">
                 </a>
             </div>
+            <!-- 右边内容 -->
             <div class="right">
+                <!-- pc登入 -->
                 <div class="login_pc">
                     <div class="biaoti clear-fix">
                         <h3>1号店用户登录</h3>
@@ -86,12 +89,12 @@
                             <!-- 自动登入 -->
                             <div class="auto_login clear-fix">
                                 <p class="clear-fix">
-                                    <a href="#" id="check_agreement" tabindex="3" class="uncheck_agreement">自动登入</a>
+                                    <a href="javascript:void(0)" id="check_agreement" tabindex="3" class="uncheck_agreement">自动登入</a>
                                     <input type="hidden" id="autologinCheck">
                                     <span style="display:none" class="auto-tips">请勿再公共电脑上启用</span>
                                 </p>
                                 <!-- 忘记密码链接 -->
-                                <a href="" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
+                                <a href="password_back.html" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
                             </div>
                             <!-- btn -->
                             <button id="login_button" type='button' class="login_btn"
@@ -157,6 +160,38 @@
                             </ul>
                         </div>
                     </div>
+                </div>
+                <!-- 二维码登入 -->
+                <div class="login_code">
+                    <!-- 标题 -->
+                    <div class="login_code_title">
+                        用<a href="#">1号店APP</a>登入
+                    </div>
+                    <!-- 二维码 -->
+                    <div class="login_code_pic">
+                        <!-- 正常显示二维码 -->
+                        <div class="picture_code" id="login_code_pic" style="display:block">
+                            <img src="" alt="">
+                        </div>
+                        <div class="shade" style="display:none"></div>
+                        <!-- 过期时展示，点击按钮切换 -->
+                        <div class="meg_error" style="display:none">
+                            <h5>二维码已经过期</h5>
+                            <a href="javascript:void(0)" class="refresh_btn">请刷新二维码</a>
+                        </div>
+                    </div>
+                    <!-- 预留扫描成功 -->
+                    <div class="login_code_success"></div>
+                    <!-- 刷新二维码 -->
+                    <div class="login_code_handle">
+                        <a href="javascript:void(0)">刷新二维码</a>
+                    </div>
+                </div>
+                <!-- 右下角切换 -->
+                <div class="login_switch">
+                    <em></em>
+                    <p href="javascript:;" class="two_dimension_code"></p>
+                    <p href="javascript:;" class="static_pc"></p>
                 </div>
             </div>
         </div>
