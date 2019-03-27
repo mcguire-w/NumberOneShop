@@ -1,8 +1,5 @@
 @import "common.css";
 #needLazyLoad{
-    height: 501px;
-    margin-top: 20px;
-    // background-color: #fff;
     .quality-imoport{
         height: 501px;
         margin-top: 20px;
@@ -328,6 +325,9 @@
             height: 80px;
             border-top: 1px solid #f6f6f6;
             position: relative;
+            .imgbox{
+                transform: all 2s;
+            }
             .qua-brand-btn{
                 width: 15px;
                 height: 40px;

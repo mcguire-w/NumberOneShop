@@ -16,7 +16,7 @@
             <div class="wrap clearfix">
                 <div class="topbar-left">
                     <div class="has-child">
-                        <a href="" class="topbar-city">
+                        <a href="" target="_brank" class="topbar-city">
                             <i class="iconfont icon-tubiaozhizuomoban"></i>
                             <span class="text">送货地址&nbsp;:</span>
                             <em>深圳</em>
@@ -29,21 +29,21 @@
                         <li class="global-unlogin">
                             <div class="unlogin">
                                 <span class="hi">早上好, 请</span>
-                                <a href="" class="login-link">登录&nbsp;</a>
-                                <a href="" class="regist-link">&nbsp;注册</a>
+                                <a href="" target="_brank" class="login-link">登录&nbsp;</a>
+                                <a href="" target="_brank" class="regist-link">&nbsp;注册</a>
                             </div>
                         </li>
                         <li class="global-login">
                             <div class="login">
                                 <span class="hi">早上好,</span>
-                                <a href="" class="username"></a>
-                                <a href="" class="login-out">退出</a>
+                                <a href="" target="_brank" class="username"></a>
+                                <a href="" target="_brank" class="login-out">退出</a>
                             </div>
-                            <a href="" class="vip"></a>
+                            <a href="" target="_brank" class="vip"></a>
                         </li>
                         <li>
                             <div class="menu">
-                                <a href="" id="vip">
+                                <a href="" target="_brank" id="vip">
                                     <i class="iconfont icon-huiyuan"></i>
                                     <span class="text">会员俱乐部</span>
                                 </a>
@@ -51,7 +51,7 @@
                         </li>
                         <li>
                             <div class="menu">
-                                <a href="">
+                                <a href="" target="_brank">
                                     <i class="iconfont icon-dingdan"></i>
                                     <span class="text">我的订单</span>
                                 </a>
@@ -64,10 +64,10 @@
         <div class="header-bp"">
             <div class=" wrap hd-header">
             <div class="hd-lolo-area">
-                <a href="" class="hd-logo">
+                <a href="" target="_brank" class="hd-logo">
                     <img src="images/pic_001.png" alt="">
                 </a>
-                <a href="" class="hd-slogan">
+                <a href="" target="_brank" class="hd-slogan">
                     <div class="inner">
                         <img src="images/pic_002.gif" alt="">
                     </div>
@@ -88,22 +88,22 @@
                                 <div class="hd-search-tips">
                                     <ul class="hd-search-tips-list">
                                         <li class="item">
-                                            <a href="" class="hd-item">我是猫</a>
+                                            <a href="" target="_brank" class="hd-item">我是猫</a>
                                         </li>
                                         <li class="item">
-                                            <a href="" class="hd-item">我是猫</a>
+                                            <a href="" target="_brank" class="hd-item">我是猫</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <p class="hd-hot-search">
-                            <a href="">厨房纸巾</a>
-                            <a href="">清洁湿巾</a>
-                            <a href="">清风纸</a>
-                            <a href="">洁柔</a>
-                            <a href="">手巾纸</a>
-                            <a href="">液晶电视</a>
+                            <a href="" target="_brank">厨房纸巾</a>
+                            <a href="" target="_brank">清洁湿巾</a>
+                            <a href="" target="_brank">清风纸</a>
+                            <a href="" target="_brank">洁柔</a>
+                            <a href="" target="_brank">手巾纸</a>
+                            <a href="" target="_brank">液晶电视</a>
                         </p>
                     </div>
                     <div class="hd-mini-cart">
@@ -123,7 +123,10 @@
                         <i class="iconfont icon-up-copy"></i>
                         <!-- <i class="iconfont icon-down-copy"></i> -->
                     </div>
-                    <div class="catrgory-list"></div>
+                    <div class="catrgory-list">
+                        
+
+                    </div>
                 </div>
                 <ul class="clearfix nav-list">
                     <li>
@@ -276,6 +279,14 @@
             </small>
         </div>
     </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="js/public.js"></script>
+    <script>
+        memu.init(".header-wrap");
+        Search.init(".hd-header-right");
+    </script>
 </body>
 
 </html>
