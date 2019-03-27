@@ -1,10 +1,7 @@
 var swiper = (function () {
     let $imageBox,
     $imageBoxItem,
-<<<<<<< HEAD
     $imageWidth,
-=======
->>>>>>> bade3e61cd27eb7da5ff61e8312ec12fa0e82fa9
     $tipsBox,
     $tipsItem,
     $el,

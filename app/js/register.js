@@ -33,11 +33,13 @@ var register = (function () {
             //失去焦点
             $box.on('blur', 'input', function () {
                 //  返回文本内容
-                let ind = $(this).index('input')
-                
+                let ind = $(this).index('input')                
                 $(this).val(function (index, value) {
                     if (ind != 2 && ind != 4) {
                         if(value === ''){
+                            if(ind === 3){
+                                ind -= 1
+                            }
                             $($tishi[ind]).css('display', 'block')
                             $($true[ind]).css('display','none')      
                             $($false[ind]).css({ 'display': 'block', 'background':'#fff4d7'});
@@ -53,9 +55,9 @@ var register = (function () {
                             $bool = false
                         }
                     }
-                    _this.blur(ind)
                     return value;
                 })
+                _this.blur(ind)
             })
             $($btn).click(function () {
                 _this.focus($input[0]);
@@ -163,9 +165,9 @@ var register = (function () {
                 }
                 this.show(index)
             })
-           }else if (index > 2){
-                index -= 1;
-                this.show(index)
+           }else if(index > 2){
+             //   index -= 1;
+                this.show(index - 1)
             }           
         },
         //显示的提示框

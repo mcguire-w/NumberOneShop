@@ -56,6 +56,7 @@
             <div class="right">
                 <!-- pc登入 -->
                 <div class="login_pc">
+                    <p id="error_tips" class="error_tips" style="display: none;">账号和密码不匹配，请重新输入</p>
                     <div class="biaoti clear-fix">
                         <h3>1号店用户登录</h3>
                         <a href="register.html">注册新账号</a>
@@ -97,8 +98,7 @@
                                 <a href="password_back.html" target="_blank" class="forget_pswd" tabindex="-1">忘记密码？</a>
                             </div>
                             <!-- btn -->
-                            <button id="login_button" type='button' class="login_btn"
-                                onclick="javascript:double_submit();return false">登入</button>
+                            <button id="login_button" type='button' class="login_btn">登入</button>
                         </div>
                         <!-- 表单下面屁眼交易链接 -->
                         <div class="joint_landing">
@@ -165,7 +165,7 @@
                 <div class="login_code">
                     <!-- 标题 -->
                     <div class="login_code_title">
-                        用<a href="#">1号店APP</a>登入
+                        用<a href="#">1号店APP</a>登录
                     </div>
                     <!-- 二维码 -->
                     <div class="login_code_pic">
@@ -209,6 +209,7 @@
     </div>
     <!-- 依赖jquery -->
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <script src="js/api.js"></script>
     <script src="js/login.js"></script>
 </body>
 
