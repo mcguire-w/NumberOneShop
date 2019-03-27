@@ -2,6 +2,11 @@
 @import 'common.css';
 
 body{margin:0px;}
+.wrap{
+    width:1075px;
+        margin:0 auto;
+        position: relative;
+}
 .main{width:100%;}
 .bgF4{background-color:#F4F4F4;}
 .top-top{margin:0 auto;width:1600px;}
@@ -120,7 +125,7 @@ body{margin:0px;}
 .xg-left span:hover{color:#FF6900;cursor:pointer;background:url(../images/xin_red.jpg)no-repeat;}
 
 /*相关右边*/
-.xg-right{position:absolute;top:252px;left:500px;width:600px;float:left;padding-left:7px;}
+.xg-right{position:absolute;top:252px;left:500px;width:600px;float:left;padding-left:7px;display: block;}
 .xg-right1{width:600px;float:left;}
 .xg-right1 p{width:556px;float:left;font-size:17px;font-weight:bold;padding-left:38px;background:url(../images/ziying.jpg)no-repeat;}
 .xg-r1{width:600px;float:left;height:50px;background:#FDE5E0;margin-top:-6px;}
@@ -245,8 +250,8 @@ body{margin:0px;}
 .detail3-1 ul{width:500px;float:left;list-style:none;height:42px;padding:0px;margin:0px;}
 .detail3-1 ul li{width:100px;float:left;height:42px;border-right:1px solid #DDDDDD;}
 .detail3-1 ul li>a{width:100px;height:42px;line-height:38px;text-align:center;font-size:14px;float:left;}
-.detail3-1 ul li>a:hover{color:#FF0000;cursor:pointer;}
-.detail3-1 ul li.hot{background:#E60012;color:#FFFFFF;}
+.detail3-1 ul li>a:hover{color:red;cursor:pointer;}
+.detail3-1 ul li.hot{background:#FF94B4;color:#FFFFFF;}
 .detail3-1-content-display{display: none;}
 .pinglun{width:980px;float:left;}
 .pinglun ul{width:810px;float:left;list-style:none;padding:0px;margin-bottom:0px;}
@@ -266,7 +271,8 @@ body{margin:0px;}
 .ggcs a{width:100px;float:right;margin-left:500px;color:#0000FF;}
 .ggcs a:hover{cursor:pointer;color:#FF0000;}
 .ggcs1{width:977px;float:left;padding:7px 100px;}
-.ggcs1 img:hover{cursor:pointer;}
+.ggcs1 img:hover{cursor:pointer; }
+.ggcs1 img{float: left;}
 /*底部*/
 /*底部1*/
 .bottom-1{width:230px;float:left;margin-left:123px;text-align:center;}

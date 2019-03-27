@@ -81,11 +81,11 @@ $(function(){
 				$(".detail3-2").children("div").eq(2).removeClass('detail3-1-content-display');
 			})
 			
-			$("#zk").click(function(){
+			$("#zk").click(function(){//点击展开
 				$(this).next().show();
 			})
 			
-			$("#gb").click(function(){
+			$("#gb").click(function(){//点击合并
 				$(".xg-r3>ul").hide();
 			})
 			
