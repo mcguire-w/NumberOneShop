@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>轮播图</title>
     <link rel="stylesheet" href="css/swiper.css" >
+    <link rel="stylesheet" href="iconfont/iconfont.css">
 </head>
 <body>
     <div class="swiper-container">
@@ -34,10 +35,34 @@
             </ol>
         </div>
     </div>
+
+
+
+    <div class="sale-prod-cont cheap-prod hot-sale-list">
+        <div class="sale-scroll-box">
+            <ul class="sale-scroll-ul clearfix">
+                
+            </ul>
+        </div>
+        <a class="control-btn left-arrow unable" href="javasrcipt:;">
+            <span></span>
+        </a>
+        <a class="control-btn right-arrow unable" href="javasrcipt:;">
+            <span></span>
+        </a>
+        <div class="view-dot">
+            <span class="cur"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
     <script src="js/swiper.js"></script>
     <script>
        $('.swiper-container').swiper();
+       cartSwiper.init(".sale-prod-cont");
     </script>
 </body>
 </html>

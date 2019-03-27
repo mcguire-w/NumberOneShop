@@ -3,17 +3,6 @@
 body,p,h1,h2,h3,h4,h5,h6,input,ul,li,ol,dl,dt,dd,form,fieldset,legend,textarea,select,img,figure,figcaption{margin:0;padding:0;}
 em,i{font-style: normal;}
 b,strong,h1,h2,h3,h4,h5,h6{font-weight: normal;}
-<<<<<<< HEAD
-a,u{text-decoration: none;}
-body{font-family: "微软雅黑";}
-ul,li,ol{list-style: none;}
-img{border:0;display: block;}
-input{outline:0;border:0;}
-
-.clearfix::after{content: "";display: block;clear:both;overflow: hidden;visibility: hidden;}
-.clearfix{zoom:1;}
-.cont{width: 1142px;margin: 0 auto;height: 100%;}
-=======
 a,u{text-decoration: none;color:#333}
 body{font-family: "微软雅黑";}
 ul,li,ol{list-style: none;}
@@ -31,4 +20,3 @@ a:hover{
 .clearfix::after{content: "";display: block;clear:both;overflow: hidden;visibility: hidden;}
 .clearfix{zoom:1;}
 .wrap{width: 1070px;margin: 0 auto;height: 100%;}
->>>>>>> wang
