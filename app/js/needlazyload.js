@@ -90,7 +90,7 @@ var needLazyLoad = (function(){
                 <img src="${data.shop[0].bg1}" alt="">
             </a>
             ${str4}
-            <a href="" class="import-snacks">
+            <a href="" target="_brank" class="import-snacks">
                 <p class="import-tit">${data.shop[1].h3}</p>
                 <p class="voucher-tit">${data.shop[1].p}</p>
                 <div class="buy-btn">点击进入</div>
@@ -104,7 +104,7 @@ var needLazyLoad = (function(){
                 let s = "", st ="";
                 x.forEach((x,index) => {
                     s +=  `
-                    <a href="">
+                    <a href="" target="_brank">
                         <li class="qua-top-imgCon">
                             <div class="qua-imgCon-font">TOP${index+1}</div>
                             <img src="${x}" alt="">
@@ -120,7 +120,7 @@ var needLazyLoad = (function(){
             str1 = `
             <div class="wrap quality-imoport eat-all-word">
                 <div class="qua-show">
-                    <a href="" class="qua-tit">
+                    <a href="" target="_brank" class="qua-tit">
                         <span class="qua-tit-top" style="color:#b77347">${data.h2}</span>
                         <span class="qua-tit-spanLast" style="color: rgba(183,115,71,0.7);">/ ${data.small}</span>
                     </a>
@@ -163,7 +163,7 @@ var needLazyLoad = (function(){
             str4 ="";
             data.shop[2].forEach(x => {
                 str4 += `
-                <a href="" class="bursting">
+                <a href="" target="_brank" class="bursting">
                     <p class="bursting-font">${x.t}</p>
                     <p class="bkzj">${x.p}</p>
                     <img src="${x.bg}" alt="">
@@ -171,14 +171,14 @@ var needLazyLoad = (function(){
                 `
             });
             str3 = `
-            <a href="" class="import-snacks">
+            <a href="" target="_brank" class="import-snacks">
                 <p class="import-tit">${data.shop[0].h3}</p>
                 <p class="voucher-tit">${data.shop[0].p}</p>
                 <div class="buy-btn">点击进入</div>
                 <img src="${data.shop[0].bg1}" alt="">
             </a>
             ${str4}
-            <a href="" class="import-snacks">
+            <a href="" target="_brank" class="import-snacks">
                 <p class="import-tit">${data.shop[1].h3}</p>
                 <p class="voucher-tit">${data.shop[1].p}</p>
                 <div class="buy-btn">点击进入</div>
@@ -192,7 +192,7 @@ var needLazyLoad = (function(){
                 let s = "", st ="";
                 x.forEach((x,index) => {
                     s +=  `
-                    <a href="">
+                    <a href="" target="_brank">
                         <li class="qua-top-imgCon">
                             <div class="qua-imgCon-font">TOP${index+1}</div>
                             <img src="${x}" alt="">
@@ -209,7 +209,7 @@ var needLazyLoad = (function(){
             data.linkdata.forEach(x => {
                 str6 += `
                 <li class="qua-brand-img">
-                    <a href="">
+                    <a href="" target="_brank">
                         <img src="images/pic_0${num}.jpg" alt="">
                         <div class="qua-brand-img-hover">
                         </div>
