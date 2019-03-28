@@ -1,41 +1,53 @@
 
-$("header").load("public.html .header-wrap", function(){
+$("header").load("public.html .header-wrap", function () {
     memu.init(".header-wrap");
     Search.init(".hd-header-right");
+    showcookie.init('.header-wrap');
 })
-$("footer").load("public.html .ft-wrap", function(){
+$("footer").load("public.html .ft-wrap", function () {
 
 })
-$(".banner").load("swiper.html .swiper-container", function(){
+$(".banner").load("swiper.html .swiper-container", function () {
     $('.swiper-container').swiper();
 })
-$(".like").load("needlazyload.html #needLazyLoad",function(){
+$(".like").load("needlazyload.html #needLazyLoad", function () {
     needLazyLoad.init("#needLazyLoad");
 })
-$(".like").load("shoplist.html .mod-you-like",function(){
+$(".like").load("shoplist.html .mod-you-like", function () {
     ShopList.init(".mod-you-like");
 })
 
 
-var Single = (function(){
+var Single = (function () {
     let $el, $getel, $time, time = '2019-';
     return {
-        init(ele){
+        init(ele) {
             $el = $(ele);
             $getel = $el.find(".superSingle ul");
             $time = $el.find(".count-time span");
             this.event();
             this.getData();
         },
-        event(){
-            setInterval(this.setTime,1000);
+        event() {
+            setInterval(this.setTime, 1000);
             var date = new Date();
             var day = date.getDate(),
-            mon = date.getMonth() + 1,
-            hours = date.getHours();
+                mon = date.getMonth() + 1,
+                hours = date.getHours();
             time += mon + "-" + day + " " + (hours + 2) + ":00:00";
+            $(document).on('scroll', function () {
+                console.log(document.documentElement.scrollTop)
+                if (document.documentElement.scrollTop > 700) {
+                    // let top = $('happy-summer').offsetHeight;
+                    let max = document.documentElement.scrollTop - 680;
+                    console.log(max)
+                    $('.happy-summer').css('top', max + 'px')
+                }else{
+                    $('.happy-summer').css('top', 0)
+                }
+            })
         },
-        setTime(){
+        setTime() {
             var oDate = new Date();//获取日期对象
             var oldTime = oDate.getTime();//现在距离1970年的毫秒数
             var newDate = new Date(time);
@@ -47,25 +59,25 @@ var Single = (function(){
             second %= 3600; //余数代表 剩下的秒数；
             var minute = Math.floor(second / 60);
             second %= 60;
-            if(parseInt(hour / 10) == 0){
+            if (parseInt(hour / 10) == 0) {
                 hour = '0' + hour
             }
-            if(parseInt(minute / 10) == 0){
+            if (parseInt(minute / 10) == 0) {
                 minute = '0' + minute
             }
-            if(parseInt(second / 10) == 0){
+            if (parseInt(second / 10) == 0) {
                 second = '0' + second
             }
             $($time[0]).text(hour);
             $($time[1]).text(minute);
             $($time[2]).text(second);
         },
-        getData(){
+        getData() {
             $.getJSON("data/singleshop.json", (data) => {
                 this.setData(data[0]);
             })
         },
-        setData(data){
+        setData(data) {
             data = data.data;
             data.forEach(x => {
                 const str = `
@@ -96,7 +108,8 @@ var Single = (function(){
                 `
                 $getel.append(str);
             })
-        }
+        },
+
     }
 }())
 
