@@ -95,10 +95,10 @@ var Cart = (function(){
                 }
             })
             //每个商品选择按钮
-            console.log($(".item"))
             $(".item").on("click", ".check-item", function(){
                 //当前点击的切换 添加删除 checked
                 $(this).toggleClass('checked');         
+                console.log($(".item .checked").index(".check-item"));
                 //获取拥有checked的 itme数量;       
                 for(var i = 0; i < $listbox.length;i++){
                   let str = $($listbox[i]).attr('class');
