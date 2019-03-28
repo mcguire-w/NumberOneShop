@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="iconfont/iconfont.css">
 </head>
+
 <body>
     <header class="header-wrap">
         <div class="topbar">
@@ -83,7 +85,7 @@
                 <a href="" target="_brank" class="logo-txt"></a>
             </h1>
             <div class="area-wrapper">
-                
+
             </div>
             <div class="search">
                 <input id="keyword" type="text" placeholder="请输入关键字">
@@ -98,9 +100,9 @@
                 </div>
                 <div class="info">
                     <p>
-                            购物车还是空的呢，快去采购吧~
-                            <br>
-                            或者登录查看之前加入的商品。
+                        购物车还是空的呢，快去采购吧~
+                        <br>
+                        或者登录查看之前加入的商品。
                     </p>
                     <div class="btn-box">
                         <a href="login.html" target="_brank">登录</a>
@@ -113,7 +115,7 @@
             <div class="wrap">
                 <div class="cart-list-header cart-wrap cart-tit">
                     <span class="checkbox">
-                        <a href="javascript:;" class="check check-all"></a>
+                        <a href="javascript:;" class="check check-all checked"></a>
                         全选
                     </span>
                     <span class="tit">商品信息</span>
@@ -125,7 +127,7 @@
                 <div class="cart-list">
                     <div class="cart-tit clearfix">
                         <span class="checkbox">
-                            <a href="javascript:;" class="check check-list " data-check-type="0"></a>
+                            <a href="javascript:;" class="check check-list checked" data-check-type="0"></a>
                         </span>
                         <a class="label vender" href="">芭黎元素季丽雯专卖店</a>
                     </div>
@@ -133,18 +135,18 @@
                         <ul class="cart-item activity">
                             <li class="item item-line main-item clearfix">
                                 <div class="cart-prod clearfix">
-                                    <a href="javascript:;" class="check check-item">
+                                    <a href="javascript:;" class="check check-item checked">
                                         <i></i>
                                     </a>
                                     <a href="" class="item-pic">
                                         <img src="images/pic_009.jpg" alt="">
                                     </a>
                                     <a href="" class="item-tit">我们是什么啊啊啊
-                                            我们是什么啊啊啊
-                                            我们是什么啊啊啊
-                                            我们是什么啊啊啊
-                                            我们是什么啊啊啊
-                                            我们是什么啊啊啊
+                                        我们是什么啊啊啊
+                                        我们是什么啊啊啊
+                                        我们是什么啊啊啊
+                                        我们是什么啊啊啊
+                                        我们是什么啊啊啊
                                     </a>
                                     <div class="item-price">
                                         <p>59.00</p>
@@ -152,7 +154,7 @@
                                     <div class="item-num">
                                         <div class="num-act clearfix">
                                             <a href="javascript:;" class="minus unable">-</a>
-                                            <input type="text" name="" id="" value="1">
+                                            <input type="text" name="" id="num" value="1">
                                             <a href="javascript:;" class="add">+</a>
                                         </div>
                                         <span class="stock partial limit"></span>
@@ -160,14 +162,14 @@
                                     </div>
                                     <div class="item-amount">
                                         <div class="item-a-money">59.00</div>
-                                        <div class="item-a-weight"></div>
+                                        <div class="item-a-weight">0.2kg</div>
                                     </div>
                                     <div class="item-act">
                                         <a class="collect-btn" href="javascript:;">
-                                            <i class="iconfont"></i>
+                                            <i class="iconfont icon-guanzhu"></i>
                                         </a>
                                         <a class="del-btn" href="javascript:;">
-                                            <i class="iconfont"></i>
+                                            <i class="iconfont icon--"></i>
                                         </a>
                                     </div>
                                 </div>
@@ -184,6 +186,47 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+        <div class="settling-column-bar">
+            <div class="pay-tools-bar">
+                <div class="pay-tools-inner clearfix">
+                    <div class="pay-tools-l clearfix">
+                        <span class="select-all checkbox clearfix">
+                            <a href="javascript:;" class="pay-checkbox check check-all checked">
+                                <i></i>
+                            </a>
+                            <label class="all-checked-label">
+                                全选（共
+                                <b>1</b>
+                                件）
+                            </label>
+                        </span>
+                        |
+                        <span>
+                            <a class="l-a-tool lt-delete" href="javascript:;" clstag="pageclick|keycount|cart_201709267|3">批量删除</a>
+                            <span> </span>
+                        </span>
+                    </div>
+                    <div class="pay-tools-r clearfix"> 
+                        <a class="checkout-btn" href="javascript:void(0);" clstag="pageclick|keycount|cart_201709267|4">去结算</a> 
+                        <div class="r-price-total r-control-tip"> 
+                            合计：
+                            <span class="rpt-count">
+                                ¥
+                                <b>0.00</b>
+                            </span>    
+                            <i class="iconfont rpt-detail arrow-restore"></i> 
+                        </div> 
+                        <div class="r-prod-view r-control-tip"> 
+                            <span class="rpv-count">
+                                已选商品
+                                <b>0</b>
+                                件
+                            </span>  
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -208,4 +251,5 @@
     <script src="js/cart.js"></script>
     <script src="js/swiper.js"></script>
 </body>
+
 </html>
