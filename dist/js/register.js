@@ -88,7 +88,7 @@ var register = (function () {
                 }
             })
             $('.am-modal-btn').on('click', function () {
-                window.location.href = obj.login;
+                window.location.href = 'login.html'
             })
         },
         //span 移动出文本框
