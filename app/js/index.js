@@ -91,7 +91,7 @@ var Single = (function () {
             data.forEach(x => {
                 const str = `
                 <li>
-                    <a href="" class="superSingle-a">
+                    <a href="detail.html" class="superSingle-a">
                         <div class="single-top">
                             <div class="s-bz"></div>
                             <img class="single-top-img" src="${x.url}" alt="">

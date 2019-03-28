@@ -96,7 +96,7 @@ var Search = (function () {
           
             $ul.html("");
             data.s.forEach(x => {
-                const $li = `<li class="item"><a class="hd-item" href="">${x}</a></li>`;
+                const $li = `<li class="item"><a class="hd-item" href="detail.html">${x}</a></li>`;
                 $ul.append($li);
             })
         },

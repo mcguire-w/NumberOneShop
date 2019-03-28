@@ -7,7 +7,7 @@ $(".sale-prod").load("swiper.html .sale-prod-cont", function(){
 
 var Cart = (function(){
     let $el, $noneDataBox, $showDatabox, $checked, $setCulBox,$listbox,$checkedbox=0,
-    $check_all,$showBox,$showLi,shopData,count = 0;
+    $check_all,$showBox,$showLi,shopData,count = 0,$chk;
     return {
         init(ele){
             $el = $(ele);
@@ -37,12 +37,11 @@ var Cart = (function(){
                 var index = self.index('.del-btn');
                 count = count - shopData[index].jp;
                 shopData.splice(index, 1);
-                _this.setCountPrice();
                 _this.setShopData(shopData);
+                _this.setCountPrice(count, $chk.length);
                 _this.setCarData();
                 _this.showDiv();
             })
-            
             for(let i = 0; i < $showLi.length; i++){
                 let n = 1,
                 $price = $($showLi[i]).find(".item-a-money"),
@@ -96,10 +95,18 @@ var Cart = (function(){
             })
             //每个商品选择按钮
             $(".item").on("click", ".check-item", function(){
+                let c = 0;
                 //当前点击的切换 添加删除 checked
-                $(this).toggleClass('checked');         
-                console.log($(".item .checked").index(".check-item"));
-                //获取拥有checked的 itme数量;       
+                $(this).toggleClass('checked');  
+                // 获取有checked类名的元素
+                const $chk = $(".item .checked");
+                for(var i = 0 ; i < $chk.length; i++){
+                    let index = $($chk[i]).index(".check-item");
+                    c += $($(".item")[index]).find(".item-a-money").text() - 0;
+                } 
+                count = c;
+                _this.setCountPrice(count, $chk.length);     
+                //获取拥有checked的 itme数量;      
                 for(var i = 0; i < $listbox.length;i++){
                   let str = $($listbox[i]).attr('class');
                   let arr = str.split(' ');
@@ -171,7 +178,7 @@ var Cart = (function(){
                         <div class="item-num">
                             <div class="num-act clearfix">
                                 <a href="javascript:;" class="minus unable">-</a>
-                                <input type="text" name="" id="num" value="${x.num}">
+                                <input type="text" name="" id="num" value="${x.num}" disabled="disabled">
                                 <a href="javascript:;" class="add">+</a>
                             </div>
                             <span class="stock partial limit"></span>
@@ -199,9 +206,11 @@ var Cart = (function(){
             if(localStorage.shopList && localStorage.shopList !== "[]"){
                 $showDatabox.css("display", "block");
                 $noneDataBox.css("display", "none");
+                $(".settling-column-bar").css("display", "block");
                 this.getData();
             } else {
                 $showDatabox.css("display", "none");
+                $(".settling-column-bar").css("display", "none")
                 $noneDataBox.css("display", "block");
             }
         }
