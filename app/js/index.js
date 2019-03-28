@@ -2,7 +2,7 @@
 $("header").load("public.html .header-wrap", function () {
     memu.init(".header-wrap");
     Search.init(".hd-header-right");
-    showcookie.init('.header-wrap');
+    showcookie.init();
 })
 $("footer").load("public.html .ft-wrap", function () {
 

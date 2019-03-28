@@ -1,12 +1,12 @@
 $("footer").load("public.html .ft-wrap", function(){
-
+    showcookie.init();
 })
 $(".sale-prod").load("swiper.html .sale-prod-cont", function(){
     cartSwiper.init(".sale-prod-cont");
 })
 
 var Cart = (function(){
-    let $el, $noneDataBox, $showDatabox,showBox, $checked, $setCulBox,flag = false,showData;
+    let $el, $noneDataBox, $showDatabox,showBox,$showLi,$setCulBox,flag = false,shopData,count = 0;
     return {
         init(ele){
             $el = $(ele);
@@ -23,32 +23,50 @@ var Cart = (function(){
             $showLi = $showBox.find(".item");
             this.event();
             // this.showDiv();
+            this.setCountPrice();
         },
         event(){
             const _this = this;
             $showBox.on("click",".del-btn",function(){
                 var self = $(this)
                 var index = self.index('.del-btn');
+                count = count - shopData[index].jp;
                 shopData.splice(index, 1);
+                _this.setCountPrice();
                 _this.setShopData(shopData);
                 _this.setCarData();
             })
-            $showLi.click(function(){
-                return function(){
-                        var n = 1
-                        $showLi.on("click", ".minus", function(){
-                            const inp = $(this).siblings("#num");
-                            if(n <= 1){
-                                n = 1;
-                                $(this).addClass("unable");
-                            } else {
-                                n--
-                                $(this).removeClass("unable");
-                            }
-                        })
+            
+            for(let i = 0; i < $showLi.length; i++){
+                let n = 1,
+                $price = $($showLi[i]).find(".item-a-money"),
+                price = shopData[i].jp - 0;
+                $($(".minus")[i]).click(function(){
+                    const inp = $(this).siblings("#num");
+                    if(n <= 1){
+                        n = 1;
+                        $(this).addClass("unable");
+                    } else {
+                        n--
+                        $(this).removeClass("unable");
+                        count = count - price;
                     }
-                
-            })
+                    inp.val(n);
+                    $price.text(price * n)
+                    _this.setCountPrice();
+                })
+                $($(".add")[i]).click(function(){
+                    const inp = $(this).siblings("#num");
+                    n++
+                    $(".minus").removeClass("unable");
+                    inp.val(n);
+                    $price.text(price * n)
+                    count = count + price
+                    _this.setCountPrice();
+                })
+                shopData[i].num = n;
+                _this.setCarData();
+            }
             $(".check-all").click(function(){
                 if(flag){
                     flag = false;
@@ -71,6 +89,12 @@ var Cart = (function(){
                 }
             })
         },
+        setCountPrice(){
+            $(".amount span").text(count)
+            $(".rpt-count b").text(count);
+            $(".rpv-count b").text(shopData.length);
+            $(".all-checked-label b").text(shopData.length);
+        },
         setCarData() {
             localStorage.shopList = JSON.stringify(shopData);
         },
@@ -82,6 +106,7 @@ var Cart = (function(){
             $showBox.html('');
             shopData = data;
             data.forEach(x => {
+                count += x.jp - 0;
                 const str = `
                 <li class="item item-line main-item clearfix">
                     <div class="cart-prod clearfix">
@@ -99,14 +124,14 @@ var Cart = (function(){
                         <div class="item-num">
                             <div class="num-act clearfix">
                                 <a href="javascript:;" class="minus unable">-</a>
-                                <input type="text" name="" id="num" value="1">
+                                <input type="text" name="" id="num" value="${x.num}">
                                 <a href="javascript:;" class="add">+</a>
                             </div>
                             <span class="stock partial limit"></span>
                             <span class="stock"></span>
                         </div>
                         <div class="item-amount">
-                            <div class="item-a-money"></div>
+                            <div class="item-a-money">${x.jp}</div>
                             <div class="item-a-weight">0.2kg</div>
                         </div>
                         <div class="item-act">
