@@ -93,7 +93,7 @@ var Search = (function () {
             })
         },
         insetData(data) {
-            console.log(data)
+          
             $ul.html("");
             data.s.forEach(x => {
                 const $li = `<li class="item"><a class="hd-item" href="">${x}</a></li>`;
@@ -125,10 +125,9 @@ var showcookie = (function () {
         event() {
             const _this = this;
             //点击退出时，清空cookie
-            $('login-out').click(function () {
-                // _this.clearAllCookie();
-                document.cookie = `${username}=${''}; path=/; `+`max-age=${-1};`
-                window.location.reload();
+            $('.login-out').click(function () {  
+                _this.setCookie('username','', -1);
+                _this.setCookie('id','', -1);
             })
         },
         //得到cookie的值选择展示的板块
@@ -139,34 +138,7 @@ var showcookie = (function () {
                 $('.global-login').css('display', 'block')
                 $('.username').html(name);
             }
-        },
-        //清除所有cookie
-        // clearAllCookie() {
-        //     var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
-        //     if (keys) {
-        //         for (var i = keys.length; i--;)
-        //             document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
-        //     }
-        // },
-        //清除所有cookie
-        clearAllCookie() {
-            var cookies = document.cookie.split(";");
-            for (var i = 0; i < cookies.length; i++) {
-                var cookie = cookies[i];
-                var eqPos = cookie.indexOf("=");
-                var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/";
-            }
-            if (cookies.length > 0) {
-                for (var i = 0; i < cookies.length; i++) {
-                    var cookie = cookies[i];
-                    var eqPos = cookie.indexOf("=");
-                    var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-                    var domain = location.host.substr(location.host.indexOf('.'));
-                    document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/; domain=" + domain;
-                }
-            }
-        },
+        },      
         //获取cookie的值
         getCookie(cname) {
             var name = cname + "=";
@@ -176,6 +148,10 @@ var showcookie = (function () {
                 if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
             }
             return "";
+        },
+        setCookie(key, value, day) {
+            // 添加/修改cookie
+            document.cookie = `${key}=${value}; max-age=${day*24*3600}; path=/`;
         }
     }
 }())

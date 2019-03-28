@@ -13,7 +13,7 @@
 <body>
     <!-- header -->
     <header></header>
-    
+
     <!--banner -->
     <section class="banner"></section>
     <!-- 新人专属 -->
@@ -21,6 +21,24 @@
         <a href="">
             <img src="images/pic_004.png" alt="">
         </a>
+        <div class="hd_search_form hd_search_fixed hd_search_red" style="top: 0px;" id="hdSearchForm">
+            <div class="hd_fixed_wrap">
+                <a href="javascript:;" class="hd_fixed_logo"><img src="images/index_auto_logo.jpg" alt="" width="205"
+                        height="60"></a>
+                <div class="hd_search_wrap clearfix">
+                    <label for="keyword" class="hd_search_tip" style="display:none;"></label>
+                    <input class="hd_search_ipt" name="keyword" id="keyword" type="text" value="" placeholder="矿泉水"
+                        original="矿泉水" url="" maxlength="100" autocomplete="off" x-webkit-speech=""
+                        onwebkitspeechchange="emptySearchBar();" x-webkit-grammar="builtin:translate">
+                    <button type="button" class="hd_search_btn" clstag="pageclick|keycount|shouye_20181018|Search"><i
+                            class="iconfont icon-fangdajing"></i></button>
+                </div>
+                <!--搜索提示 begin-->
+                <div id="searchSuggest" class="hd_search_tips_result " style="display:none"
+                    onmouseover="$('#searchSuggest').show()"></div>
+                <!--搜索提示 end-->
+            </div>
+        </div>
     </section>
     <!-- 超级单品 -->
     <section class="single-con">
