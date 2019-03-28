@@ -26,6 +26,7 @@ var ShopList = (function(){
             var flag = true;
             // 添加数据分两种情况
             for(var i = 0; i < shopList.length; i++) {
+                shopList[i].num = 1;                                                                                                                                                    
                 if(shopList[i].id == data.id) {
                     // 数据已存在,  相当于count进行累加
                     flag = false;
@@ -57,6 +58,7 @@ var ShopList = (function(){
         setData(data){
             data = data[0].data;
             data.forEach(x => {
+                x.num = x.num ? x.num : 1;
                 str = `
                 <li class="under-list-single" attr-id="${x.id}">
                     <div class="under-pro-pic">
