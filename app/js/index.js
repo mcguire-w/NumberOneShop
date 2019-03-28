@@ -36,11 +36,9 @@ var Single = (function () {
                 hours = date.getHours();
             time += mon + "-" + day + " " + (hours + 2) + ":00:00";
             $(document).on('scroll', function () {
-                console.log(document.documentElement.scrollTop)
                 if (document.documentElement.scrollTop > 700) {
                     // let top = $('happy-summer').offsetHeight;
                     let max = document.documentElement.scrollTop - 680;
-                    console.log(max)
                     $('.happy-summer').css('top', max + 'px')
                 }else{
                     $('.happy-summer').css('top', 0)
