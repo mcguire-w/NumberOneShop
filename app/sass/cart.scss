@@ -184,8 +184,8 @@
                 vertical-align: middle;
             }
             .checked{
-                background-color: #ff5e5e;
-                border-color: #ff5e5e;
+                background-color: #ff5e5e !important;
+                border-color: #ff5e5e !important;
             }
             .cart-list-header{
                 margin: 10px auto;
@@ -411,6 +411,137 @@
                                 font-size: 12px;
                                 font-family: 'Microsoft Yahei';
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .settling-column-bar{
+        position: relative;
+        z-index: 333;
+        height: 60px;
+        margin-top: 20px;
+        .checked{
+            background-color: #ff5e5e !important;
+            border-color: #ff5e5e !important;
+        }
+        .pay-tools-bar{
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            height: 60px;
+            background-color: #fcfcfc;
+        }
+        .pay-tools-inner{
+            width: 1200px;
+            margin: 0 auto;
+            .pay-tools-l{
+                float: left;
+                width: 600px;
+                height: 16px;
+                padding: 22px 0px;
+                line-height: 16px;
+                font-size: 16px;
+                color: #dedede;
+                overflow: hidden;
+                .checked{
+                    background-color: #ff5e5e;
+                    border-color: #ff5e5e;
+                }
+                .select-all{
+                    float: left;
+                    display: inline-block;
+                    margin: 0 18px 0 30px;
+                    .pay-checkbox{
+                        float: left;
+                        display: inline-block;
+                        margin-top: 1px;
+                        overflow: hidden;
+                    }
+                    .check{
+                        position: relative;
+                        display: inline-block;
+                        width: 13px;
+                        height: 13px;
+                        margin-right: 20px;
+                        border: 1px solid #dcdcdc;
+                        border-radius: 3px;
+                        background-color: #fff;
+                    }
+                    .all-checked-label{
+                        float: left;
+                        color: #333;
+                        font-size: 12px;
+                        cursor: pointer;
+                        b{
+                            color: #ff5e5e;
+                            font-family: 'Tahoma'
+                        }
+                    }
+                }
+                .l-a-tool{
+                    margin: 0px 18px;
+                    font-size: 12px;
+                    color: #999;
+                }
+            }
+            .pay-tools-r{ 
+                float: right;
+                width: 600px;
+                height: 60px;
+                line-height: 60px;
+                .checkout-btn{
+                    float: right;
+                    display: inline-block;
+                    width: 110px;
+                    text-align: center;
+                    background-color: #ff6c6c;
+                    font-family: 'microsoft yahei';
+                    font-weight: bold;
+                    font-size: 17px;
+                    color: #fff;
+                }
+                .unable{
+                    background-color: #ccc;
+                    cursor: default;
+                }
+                .r-price-total{
+                    position: relative;
+                    float: right;
+                    height: 60px;
+                    padding-right: 20px;
+                    margin: -3px 15px 0 15px;
+                    font-size: 13px;
+                    overflow: hidden;
+                    .rpt-count{
+                        position: relative;
+                        top: 1px;
+                        font-size: 16px;
+                        color: #ff5e5e;
+                        font-weight: bold;
+                        b{
+                            margin-left: 2px;
+                            font-size: 22px;
+                            font-weight: bold;
+                            font-family: 'Century Gothic','microsoft yahei','Tahoma';
+                        }
+                    }
+                }
+                .r-prod-view{
+                    position: relative;
+                    float: right;
+                    height: 60px;
+                    font-size: 16px;
+                    color: #dedede;
+                    .rpv-count{
+                        font-size: 12px;
+                        color: #333;
+                        b{
+                            margin: 0px 2px;
+                            color: #ff5e5e;
+                            font-weight: bold;
+                            font-family: 'Tahoma';
                         }
                     }
                 }

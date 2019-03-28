@@ -2,6 +2,8 @@ var ShopList = (function(){
     let $el,
     $ul,
     p = 110,
+    listData = {},
+    data = [];
     arr = [["三只松鼠(Three Squirrels)", "维达(Vinda)", "农夫山泉", "妙洁(MIAOJIE)"],["清风", '苏菲', '雀巢','良品铺子']];
     return {
         init(ele){
@@ -10,10 +12,16 @@ var ShopList = (function(){
             this.getData();
         },
         event(){
-
+            $(".item-cart").click(function(){
+                const index = $(this).index(".item-cart");
+                data.push(listData[index % 4]);
+                localStorage.data = data;
+                console.log(typeof listData[0]);
+            })
         },
         getData(){
             $.getJSON("data/data.json", (data) => {
+                listData = data[0].data;
                 let n = 0;
                 for(var i = 0; i < 15; i++){
                     if(i === 3 || i === 8){
@@ -23,6 +31,7 @@ var ShopList = (function(){
                     }
                     this.setData(data);
                 }
+                this.event();
             })
         },
         setData(data){
@@ -48,7 +57,7 @@ var ShopList = (function(){
                     </div>
                     <div class="sing-btn-con">
                         <div class="sin-hover-btn sin-gw">
-                            <a class="sin-hover-btn-a item-cart" href="">
+                            <a class="sin-hover-btn-a item-cart" href="javascript:;">
                                 <i class="iconfont icon-tianjiagouwuche"></i>
                             </a>
                         </div>
