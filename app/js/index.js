@@ -35,16 +35,25 @@ var Single = (function () {
                 mon = date.getMonth() + 1,
                 hours = date.getHours();
             time += mon + "-" + day + " " + (hours + 2) + ":00:00";
+            //鼠标滑动,
             $(document).on('scroll', function () {
-                console.log(document.documentElement.scrollTop)
                 if (document.documentElement.scrollTop > 700) {
-                    // let top = $('happy-summer').offsetHeight;
                     let max = document.documentElement.scrollTop - 680;
-                    console.log(max)
                     $('.happy-summer').css('top', max + 'px')
+                    $('.hd_search_fixed').css('display','block')
                 }else{
                     $('.happy-summer').css('top', 0)
+                    $('.hd_search_fixed').css('display','none')
                 }
+                if(document.documentElement.scrollTop > 2400){
+                    $('.h-zd').css('display','block')
+                }else{
+                    $('.h-zd').css('display','none')
+                }
+            })
+            $('.h-zd').click(function(){
+                
+                $(document.documentElement).animate({'scrollTop':0},500)
             })
         },
         setTime() {

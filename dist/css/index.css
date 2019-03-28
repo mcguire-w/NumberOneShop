@@ -432,6 +432,71 @@
   height: 110px;
   margin-top: 20px;
   cursor: pointer; }
+  .new-person .hd_search_fixed {
+    display: none;
+    position: fixed;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff; }
+    .new-person .hd_search_fixed .hd_fixed_wrap {
+      width: 1070px;
+      margin: 0 auto; }
+  .new-person .hd_fixed_logo {
+    display: block;
+    width: 150px;
+    height: 60px;
+    float: left;
+    margin-right: 70px; }
+    .new-person .hd_fixed_logo img {
+      width: 150px;
+      height: 60px; }
+  .new-person .hd_search_wrap {
+    border-radius: 100px;
+    float: left;
+    margin: 10px 0 0 0;
+    position: relative;
+    z-index: 501;
+    padding: 2px;
+    background-color: #ff4040; }
+    .new-person .hd_search_wrap label {
+      position: absolute;
+      top: 2px;
+      left: 32px;
+      line-height: 36px;
+      color: #aaa;
+      font-size: 14px;
+      cursor: text; }
+    .new-person .hd_search_wrap .hd_search_ipt {
+      width: 406px;
+      border-top-left-radius: 100px;
+      border-bottom-left-radius: 100px;
+      background-color: #fff;
+      float: left;
+      height: 36px;
+      outline: 0 none;
+      border: 0 none;
+      padding-left: 32px;
+      font-size: 14px;
+      color: #333;
+      line-height: 36px; }
+    .new-person .hd_search_wrap .hd_search_btn {
+      width: 68px;
+      border-top-right-radius: 100px;
+      border-bottom-right-radius: 100px;
+      float: left;
+      height: 36px;
+      border: 0 none;
+      background-color: #ff4040;
+      text-align: center;
+      line-height: 36px;
+      color: #fff;
+      cursor: pointer;
+      outline: 0; }
+      .new-person .hd_search_wrap .hd_search_btn i {
+        font-size: 24px; }
 
 .single-con {
   background: 0;
@@ -552,7 +617,7 @@
             position: relative; }
             .single-con .superSingle ul li .superSingle-a .single-top .s-bz {
               height: 24px;
-              -moz-border-radius: 0 0 12px 12px;
+              border-radius: 0 0 12px 12px;
               color: #fff;
               position: relative;
               top: 10px;
@@ -650,7 +715,7 @@
         line-height: 34px;
         letter-spacing: 1px; }
       .single-con .happy-summer .happy-bott .happy-ewm {
-        cursor: auto;
+        margin: 0 auto;
         width: 76px;
         cursor: pointer; }
       .single-con .happy-summer .happy-bott .h-logo {
