@@ -89,7 +89,7 @@ var ShopList = (function(){
                             </a>
                         </div>
                     </div>
-                    <a href="" class="border-line"></a>
+                    <a href="xiangqing1.html" class="border-line"></a>
                 </li>
                 `
                 $ul.append(str);

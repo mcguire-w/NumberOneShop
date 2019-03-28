@@ -99,7 +99,7 @@ body{margin:0px;}
 .jianjie ul li a:hover{cursor:pointer;color:#FF0000;}
 
 /*相关介绍*/
-.xiangguan{width:1204px;float:left;margin:9px 0px 0px 25.5px;}
+.xiangguan{position: relative; width:1204px;float:left;margin:9px 0px 0px 25.5px;}
 /*左边*/
 .xg-left{width:400px;float:left;position:relative;}
 /*左边图片*/
@@ -125,7 +125,7 @@ body{margin:0px;}
 .xg-left span:hover{color:#FF6900;cursor:pointer;background:url(../images/xin_red.jpg)no-repeat;}
 
 /*相关右边*/
-.xg-right{position:absolute;top:252px;left:500px;width:600px;float:left;padding-left:7px;display: block;}
+.xg-right{position:absolute;top:0px;left: 410px;width:600px;float:left;padding-left:7px;display: block;}
 .xg-right1{width:600px;float:left;}
 .xg-right1 p{width:556px;float:left;font-size:17px;font-weight:bold;padding-left:38px;background:url(../images/ziying.jpg)no-repeat;}
 .xg-r1{width:600px;float:left;height:50px;background:#FDE5E0;margin-top:-6px;}
