@@ -2,7 +2,7 @@ var ShopList = (function(){
     let $el,
     $ul,
     p = 110,
-    listData = {},
+    shopData,
     data = [];
     arr = [["三只松鼠(Three Squirrels)", "维达(Vinda)", "农夫山泉", "妙洁(MIAOJIE)"],["清风", '苏菲', '雀巢','良品铺子']];
     return {
@@ -12,16 +12,36 @@ var ShopList = (function(){
             this.getData();
         },
         event(){
+            const self = this
             $(".item-cart").click(function(){
                 const index = $(this).index(".item-cart");
-                data.push(listData[index % 4]);
-                localStorage.data = data;
-                console.log(typeof listData[0]);
+                self.setCarData(shopData[index % 4]);
             })
+        },
+        setCarData(data) {
+            // 获取原有数据
+            let shopList = localStorage.shopList || '[]';
+            // 存储到本地数据
+            shopList = JSON.parse(shopList);
+            var flag = true;
+            // 添加数据分两种情况
+            for(var i = 0; i < shopList.length; i++) {
+                if(shopList[i].id == data.id) {
+                    // 数据已存在,  相当于count进行累加
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag){
+                // 把数据添加到数组中
+                shopList.push(data);
+            }
+            // 替换原有数据
+            localStorage.shopList = JSON.stringify(shopList);
         },
         getData(){
             $.getJSON("data/data.json", (data) => {
-                listData = data[0].data;
+                shopData = data[0].data;
                 let n = 0;
                 for(var i = 0; i < 15; i++){
                     if(i === 3 || i === 8){

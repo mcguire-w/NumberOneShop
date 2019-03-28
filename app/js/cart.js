@@ -19,8 +19,13 @@ var Cart = (function(){
             $check_all = $('.check-all');
             // 获取展示数据的盒子
             $showDatabox = $el.find(".cart-wrap");
+            // 设置数据的盒子
+            $showBox =  $showDatabox.find(".cart-item");
             // 获取结算的盒子
             $setCulBox = $el.find(".settling-column-bar");
+            this.getData();
+            // 获取所有的li
+            $showLi = $showBox.find(".item");
             this.event();
             // this.showDiv();
         },
@@ -100,6 +105,58 @@ var Cart = (function(){
                 $("#num").val(n)
             })
         },
+        setCarData() {
+            localStorage.shopList = JSON.stringify(shopData);
+        },
+        getData(){
+            var data = localStorage.shopList || '[]';
+            this.setShopData(JSON.parse(data));
+        },
+        setShopData(data){
+            $showBox.html('');
+            shopData = data;
+            data.forEach(x => {
+                const str = `
+                <li class="item item-line main-item clearfix">
+                    <div class="cart-prod clearfix">
+                        <a href="javascript:;" class="check check-item checked">
+                            <i></i>
+                        </a>
+                        <a href="" class="item-pic">
+                            <img src="${x.url}" alt="">
+                        </a>
+                        <a href="" class="item-tit">${x.t}
+                        </a>
+                        <div class="item-price">
+                            <p>${x.jp}</p>
+                        </div>
+                        <div class="item-num">
+                            <div class="num-act clearfix">
+                                <a href="javascript:;" class="minus unable">-</a>
+                                <input type="text" name="" id="num" value="1">
+                                <a href="javascript:;" class="add">+</a>
+                            </div>
+                            <span class="stock partial limit"></span>
+                            <span class="stock"></span>
+                        </div>
+                        <div class="item-amount">
+                            <div class="item-a-money"></div>
+                            <div class="item-a-weight">0.2kg</div>
+                        </div>
+                        <div class="item-act">
+                            <a class="collect-btn" href="javascript:;">
+                                <i class="iconfont icon-guanzhu"></i>
+                            </a>
+                            <a class="del-btn" href="javascript:;">
+                                <i class="iconfont icon--"></i>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                `
+                $showBox.append(str);
+            })
+        },
         showDiv(){
             if(localStorage.data){
                 $showDatabox.css("display", "block");
@@ -109,6 +166,7 @@ var Cart = (function(){
                 $noneDataBox.css("display", "block");
             }
         }
+    
     }
 }())
 
