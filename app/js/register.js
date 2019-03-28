@@ -32,12 +32,13 @@ var register = (function () {
             })
             //失去焦点
             $box.on('blur', 'input', function () {
-                //  返回文本内容
+                //  返回input在所有input的索引
                 let ind = $(this).index('input')                
                 $(this).val(function (index, value) {
                     if (ind != 2 && ind != 4) {
+                        //要求内容不为空
                         if(value === ''){
-                            if(ind === 3){
+                            if(ind === 3){//=3时为密码框
                                 ind -= 1
                             }
                             $($tishi[ind]).css('display', 'block')
@@ -47,7 +48,7 @@ var register = (function () {
                             return value;
                         }
                         $bool = $reg[ind].test(value)
-                    } else if (ind === 4) {
+                    } else if (ind === 4) {//跳过再次输入密码，单独验证
                         let str = $($input[3]).val()
                         if (value === str && value != '') {
                             $bool = true;
@@ -60,8 +61,7 @@ var register = (function () {
                 _this.blur(ind)
             })
             $($btn).click(function () {
-                // _this.focus($input[0]);
-                // _this.blur($input[0], false);
+               
                 $data = {
                     username: $('#username').val(),
                     phone: $('#phone').val(),
@@ -130,16 +130,15 @@ var register = (function () {
                 phone:''
                     },(data)=>{
                         data = JSON.parse(data);
-                    console.log(data);
+                 
                     let bool = data.boo;                   
                         if(bool === 'true'){
-                            console.log('存在')
+                        
                             $boo = false;
                             $($p[0]).html(_=>{
                                 return '用户名已存在';
                             })
                         }else{
-                            console.log('不存在')
                            $boo = true;
                             $($p[0]).html(_=>{
                                 return '用户名格式错误请输入正确的用户名';
@@ -151,7 +150,7 @@ var register = (function () {
             $.get(obj.register_name,{username:'',phone:$($input[1]).val()},(data)=>{
                 data = JSON.parse(data);
                 let bool = data.boo;
-                console.log(data)
+         
                 if(bool === 'true'){
                     $boo = false;
                     $($p[1]).html(_=>{
