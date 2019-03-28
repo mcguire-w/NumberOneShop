@@ -3,6 +3,7 @@ var ShopList = (function(){
     $ul,
     p = 110,
     shopData,
+    shopList,
     data = [];
     arr = [["三只松鼠(Three Squirrels)", "维达(Vinda)", "农夫山泉", "妙洁(MIAOJIE)"],["清风", '苏菲', '雀巢','良品铺子']];
     return {
@@ -16,11 +17,13 @@ var ShopList = (function(){
             $(".item-cart").click(function(){
                 const index = $(this).index(".item-cart");
                 self.setCarData(shopData[index % 4]);
+                $(".hd-c-num").css("display","block");
+                $(".hd-c-num").text(shopList.length)
             })
         },
         setCarData(data) {
             // 获取原有数据
-            let shopList = localStorage.shopList || '[]';
+            shopList = localStorage.shopList || '[]';
             // 存储到本地数据
             shopList = JSON.parse(shopList);
             var flag = true;

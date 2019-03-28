@@ -60,8 +60,8 @@ var register = (function () {
                 _this.blur(ind)
             })
             $($btn).click(function () {
-                _this.focus($input[0]);
-                _this.blur($input[0], false);
+                // _this.focus($input[0]);
+                // _this.blur($input[0], false);
                 $data = {
                     username: $('#username').val(),
                     phone: $('#phone').val(),
@@ -84,7 +84,7 @@ var register = (function () {
                             alert('网络错误请求失败');
                             console.log(result);
                         }
-                    },'script')
+                    })
                 }
             })
             $('.am-modal-btn').on('click', function () {

@@ -19,7 +19,7 @@ var Cart = (function(){
             $showBox =  $showDatabox.find(".cart-item");
             // 获取结算的盒子
             $setCulBox = $el.find(".settling-column-bar");
-            this.getData();
+            this.showDiv();
             // 获取所有的li
             $showLi = $showBox.find(".item");
             //商品选择按钮集合
@@ -28,7 +28,7 @@ var Cart = (function(){
             $check_all = $('.check-all');
             this.event();
             // this.showDiv();
-            this.setCountPrice();
+            this.setCountPrice(count, shopData.length);
         },
         event(){
             const _this = this;
@@ -40,6 +40,7 @@ var Cart = (function(){
                 _this.setCountPrice();
                 _this.setShopData(shopData);
                 _this.setCarData();
+                _this.showDiv();
             })
             
             for(let i = 0; i < $showLi.length; i++){
@@ -58,7 +59,7 @@ var Cart = (function(){
                     }
                     inp.val(n);
                     $price.text(price * n)
-                    _this.setCountPrice();
+                    _this.setCountPrice(count, shopData.length);
                 })
                 $($(".add")[i]).click(function(){
                     const inp = $(this).siblings("#num");
@@ -67,7 +68,7 @@ var Cart = (function(){
                     inp.val(n);
                     $price.text(price * n)
                     count = count + price
-                    _this.setCountPrice();
+                    _this.setCountPrice(count, shopData.length);
                 })
                 shopData[i].num = n;
                 _this.setCarData();
@@ -84,12 +85,13 @@ var Cart = (function(){
                     $('.pay-checkbox').addClass('checked');
                     $listbox.addClass('checked');
                     $checkedbox = 0;
-                 
+                    _this.setCountPrice(count, shopData.length)
                 }else{
                     //否则全不选
                     $('.pay-checkbox').removeClass('checked');
                     $listbox.removeClass('checked');
                     $checkedbox = 0;
+                    _this.setCountPrice(0, 0)
                 }
             })
             //每个商品选择按钮
@@ -124,19 +126,21 @@ var Cart = (function(){
                     $check_all.addClass('checked');
                     $listbox.addClass('checked');
                     $checkedbox = 0;
+                    _this.setCountPrice(count, shopData.length)
                 }else{
                 //否者全不选
                     $check_all.removeClass('checked');
                     $listbox.removeClass('checked');
                     $checkedbox = 0;
+                    _this.setCountPrice(0, 0)
                 }
             })
         },
-        setCountPrice(){
+        setCountPrice(count , len){
             $(".amount span").text(count)
             $(".rpt-count b").text(count);
-            $(".rpv-count b").text(shopData.length);
-            $(".all-checked-label b").text(shopData.length);
+            $(".rpv-count b").text(len);
+            $(".all-checked-label b").text(len);
         },
         setCarData() {
             localStorage.shopList = JSON.stringify(shopData);
@@ -192,9 +196,10 @@ var Cart = (function(){
             })
         },
         showDiv(){
-            if(localStorage.data){
+            if(localStorage.shopList && localStorage.shopList !== "[]"){
                 $showDatabox.css("display", "block");
                 $noneDataBox.css("display", "none");
+                this.getData();
             } else {
                 $showDatabox.css("display", "none");
                 $noneDataBox.css("display", "block");
